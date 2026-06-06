@@ -125,23 +125,26 @@ class ModelTrainer:
             'metric': 'multi_logloss'
         }
         
-        if X_val is not None:
+        if X_val is not None and len(X_val) > 0:
             val_data = lgb.Dataset(X_val, label=y_val, reference=train_data)
             model = lgb.train(
                 params,
                 train_data,
-                num_boost_round=100,
+                num_boost_round=300,
                 valid_sets=[train_data, val_data],
-                valid_names=['train', 'valid']
+                valid_names=['train', 'valid'],
+                early_stopping_rounds=30,
+                verbose_eval=50,
             )
         else:
             model = lgb.train(
                 params,
                 train_data,
-                num_boost_round=100
+                num_boost_round=150,
             )
         
-        print(f"✓ LightGBM trained with {100} boosting rounds")
+        rounds = model.current_iteration() if hasattr(model, 'current_iteration') else 100
+        print(f"✓ LightGBM trained with {rounds} boosting rounds")
         
         return model
     

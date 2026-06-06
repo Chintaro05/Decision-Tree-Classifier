@@ -226,6 +226,11 @@ class ModelEvaluator:
         print("LightGBM Classifier Evaluation")
         print("="*60)
 
+        X_known_test = self._fillna_matrix(X_known_test)
+        X_unknown_test = self._fillna_matrix(X_unknown_test)
+        X_known_val = self._fillna_matrix(X_known_val)
+        X_unknown_val = self._fillna_matrix(X_unknown_val)
+
         if threshold is None:
             threshold, metrics = self.calibrate_threshold(
                 self.lgb_model,

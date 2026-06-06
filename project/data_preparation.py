@@ -34,29 +34,40 @@ def clean_text(text):
         return ""
     return text.strip()
 
-def is_valid_file(content):
-    """Check if file is valid (not empty, not binary-like)"""
+
+def is_clean_sample(content, seen):
+    """Validate a code sample and filter binary-like, duplicates, or extremely noisy text."""
     if not isinstance(content, str):
         return False
-    
-    # Remove by length
-    if len(content.strip()) < 10:
+
+    text = content.strip()
+    if len(text) < 50:
         return False
-    
-    # Check for binary/encoded content
-    try:
-        # Check for too many non-ASCII characters
-        non_ascii = sum(1 for c in content if ord(c) > 127)
-        if non_ascii / len(content) > 0.3:  # More than 30% non-ASCII
-            return False
-        
-        # Check for base64 or excessive minification
-        if len(content.split('\n')) < 2 and len(content) > 500:  # Very long single line
-            return False
-            
-        return True
-    except:
+    if len(text) > 20000:
         return False
+
+    lines = text.split('\n')
+    if len(lines) > 500:
+        return False
+
+    # Drop samples with overly long individual lines.
+    if max((len(line) for line in lines[:200]), default=0) > 500:
+        return False
+
+    # Drop binary-like content containing too many control characters.
+    sample = text[:1000]
+    nonprint = sum(1 for ch in sample if ord(ch) < 9 or 13 < ord(ch) < 32)
+    if nonprint > 50:
+        return False
+
+    # Drop duplicates across the dataset.
+    key = hash(text[:500])
+    if key in seen:
+        return False
+    seen.add(key)
+
+    return True
+
 
 def truncate_file(content, max_lines=100):
     """Keep first N lines of file"""
@@ -64,6 +75,7 @@ def truncate_file(content, max_lines=100):
         return ""
     lines = content.split('\n')
     return '\n'.join(lines[:max_lines])
+
 
 def is_mislabeled_json(content, language):
     """Drop JavaScript/TypeScript samples that look more like JSON than real code."""
@@ -82,6 +94,7 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
     print(f"Target: {samples_per_class} samples per language")
     
     data_dict = defaultdict(list)
+    seen = set()
     
     try:
         # Try to load from The Stack v2
@@ -89,11 +102,10 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
             print(f"Loading {lang}...")
             try:
                 ds = load_dataset(
-                    "bigcode/the-stack-v2",
+                    "bigcode/the-stack-v2-dedup",
                     data_dir=f"data/{lang}",
                     split="train",
                     streaming=True,
-                    trust_remote_code=True,
                 )
                 
                 count = 0
@@ -105,7 +117,7 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
                     
                     # Clean and validate
                     content = clean_text(content)
-                    if not is_valid_file(content):
+                    if not is_clean_sample(content, seen):
                         continue
                     
                     # Truncate to first 100 lines
