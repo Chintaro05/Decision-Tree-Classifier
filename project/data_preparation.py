@@ -311,6 +311,29 @@ def create_synthetic_dataset(languages, samples_per_class):
 
     return data_dict
 
+
+def get_unknown_samples(fmt_name: str, snippet: str, n: int) -> list:
+    """Generate unknown-format snippets for calibration."""
+    import random
+    rng = random.Random(hash(fmt_name) & 0xFFFF)
+    out = []
+    for i in range(n):
+        pad = "\n".join(f"// line {rng.randint(0,9999)}" for _ in range(rng.randint(0, 3)))
+        out.append(snippet + ("\n" + pad if pad else ""))
+    return out
+
+
+UNKNOWN_SNIPPETS = {
+    "JSON": '{\n  "name": "demo",\n  "version": 1,\n  "items": [1,2,3]\n}\n',
+    "YAML": "name: demo\nversion: 1\nitems:\n  - one\n  - two\n",
+    "CSV": "id,name,age\n1,Alice,30\n2,Bob,25\n3,Carol,35\n",
+    "TOML": '[package]\nname = "demo"\nversion = "1.0"\n',
+    "INI": "[section]\nkey = value\n; comment\nflag = true\n",
+    "XML": '<?xml version="1.0"?>\n<root>\n  <item id="1">hello</item>\n</root>\n',
+    "SVG": '<svg xmlns="http://www.w3.org/2000/svg" width="100">\n  <circle cx="50" cy="50" r="40"/>\n</svg>\n',
+}
+
+
 if __name__ == "__main__":
     df = download_dataset()
     print("\nDataset Statistics:")

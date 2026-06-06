@@ -109,43 +109,43 @@ class ModelTrainer:
         print("\n" + "="*60)
         print("Training LightGBM Classifier")
         print("="*60)
-        
-        train_data = lgb.Dataset(X_train, label=y_train)
-        
-        params = {
-            'objective': 'multiclass',
-            'num_class': len(self.class_labels),
-            'boosting_type': 'gbdt',
-            'num_leaves': 31,
-            'learning_rate': 0.1,
-            'feature_fraction': 0.8,
-            'bagging_fraction': 0.8,
-            'bagging_freq': 5,
-            'verbose': -1,
-            'metric': 'multi_logloss'
-        }
-        
+
         if X_val is not None and len(X_val) > 0:
-            val_data = lgb.Dataset(X_val, label=y_val, reference=train_data)
-            model = lgb.train(
-                params,
-                train_data,
-                num_boost_round=300,
-                valid_sets=[train_data, val_data],
-                valid_names=['train', 'valid'],
+            model = lgb.LGBMClassifier(
+                n_estimators=300,
+                max_depth=8,
+                num_leaves=31,
+                learning_rate=0.05,
+                subsample=0.9,
+                colsample_bytree=0.9,
+                random_state=42,
+                n_jobs=-1,
+                verbose=-1
+            )
+            model.fit(
+                X_train,
+                y_train,
+                eval_set=[(X_val, y_val)],
                 early_stopping_rounds=30,
-                verbose_eval=50,
+                verbose=False
             )
         else:
-            model = lgb.train(
-                params,
-                train_data,
-                num_boost_round=150,
+            model = lgb.LGBMClassifier(
+                n_estimators=150,
+                max_depth=8,
+                num_leaves=31,
+                learning_rate=0.05,
+                subsample=0.9,
+                colsample_bytree=0.9,
+                random_state=42,
+                n_jobs=-1,
+                verbose=-1
             )
-        
-        rounds = model.current_iteration() if hasattr(model, 'current_iteration') else 100
+            model.fit(X_train, y_train)
+
+        rounds = model.best_iteration_ if hasattr(model, 'best_iteration_') else model.n_estimators_
         print(f"✓ LightGBM trained with {rounds} boosting rounds")
-        
+
         return model
     
     def save_models(self, sklearn_model, lgb_model, output_dir='models'):
@@ -159,9 +159,17 @@ class ModelTrainer:
         print(f"✓ Saved sklearn model to {sklearn_path}")
         
         # Save LightGBM model
-        lgb_path = os.path.join(output_dir, 'lgb_model.pkl')
-        lgb_model.save_model(lgb_path)
-        print(f"✓ Saved LightGBM model to {lgb_path}")
+        lgb_txt_path = os.path.join(output_dir, 'lgb_model.txt')
+        if hasattr(lgb_model, 'booster_'):
+            lgb_model.booster_.save_model(lgb_txt_path)
+        else:
+            lgb_model.save_model(lgb_txt_path)
+        print(f"✓ Saved LightGBM booster text to {lgb_txt_path}")
+
+        lgb_pickle_path = os.path.join(output_dir, 'lgb_model.pkl')
+        with open(lgb_pickle_path, 'wb') as f:
+            pickle.dump({'model': lgb_model, 'features': self.feature_columns}, f)
+        print(f"✓ Saved LightGBM wrapper to {lgb_pickle_path}")
         
         # Save encoder and metadata
         metadata = {

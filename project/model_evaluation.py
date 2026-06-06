@@ -23,9 +23,14 @@ class ModelEvaluator:
         """Load trained models"""
         with open(os.path.join(self.model_dir, 'sklearn_tree.pkl'), 'rb') as f:
             self.sklearn_model = pickle.load(f)
-        
-        self.lgb_model = lgb.Booster(model_file=os.path.join(self.model_dir, 'lgb_model.pkl'))
-        
+
+        lgb_pkl = os.path.join(self.model_dir, 'lgb_model.pkl')
+        if os.path.exists(lgb_pkl):
+            with open(lgb_pkl, 'rb') as f:
+                self.lgb_model = pickle.load(f)['model']
+        else:
+            self.lgb_model = lgb.Booster(model_file=os.path.join(self.model_dir, 'lgb_model.txt'))
+
         with open(os.path.join(self.model_dir, 'label_encoder.pkl'), 'rb') as f:
             self.label_encoder = pickle.load(f)
         
@@ -241,11 +246,11 @@ class ModelEvaluator:
         else:
             metrics = {}
 
-        proba_known = self.lgb_model.predict(X_known_test)
+        proba_known = self.lgb_model.predict_proba(X_known_test)
         y_pred_raw = np.argmax(proba_known, axis=1)
         y_pred_labels = self.label_encoder.inverse_transform(y_pred_raw)
 
-        proba_unknown = self.lgb_model.predict(X_unknown_test) if X_unknown_test.shape[0] > 0 else np.empty((0, len(self.label_encoder.classes_)))
+        proba_unknown = self.lgb_model.predict_proba(X_unknown_test) if X_unknown_test.shape[0] > 0 else np.empty((0, len(self.label_encoder.classes_)))
         y_pred_threshold_known = self._apply_threshold(proba_known, threshold)
         y_pred_threshold_unknown = self._apply_threshold(proba_unknown, threshold)
 
