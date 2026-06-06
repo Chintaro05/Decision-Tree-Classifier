@@ -71,14 +71,14 @@ class ModelTrainer:
             y_unknown_test = np.array([])
         
         return (
-            X_train.fillna(X_train.mean()),
-            X_val.fillna(X_val.mean()),
-            X_test.fillna(X_test.mean()),
+            X_train,
+            X_val,
+            X_test,
             y_train,
             y_val,
             y_test,
-            X_unknown_val.fillna(X_unknown_val.mean()) if not X_unknown_val.empty else X_unknown_val,
-            X_unknown_test.fillna(X_unknown_test.mean()) if not X_unknown_test.empty else X_unknown_test,
+            X_unknown_val,
+            X_unknown_test,
             y_unknown_val,
             y_unknown_test
         )
@@ -96,7 +96,8 @@ class ModelTrainer:
             random_state=42
         )
         
-        clf.fit(X_train, y_train)
+        X_train_filled = self._fillna_for_sklearn(X_train)
+        clf.fit(X_train_filled, y_train)
         
         print(f"✓ Tree depth: {clf.get_depth()}")
         print(f"✓ Leaves: {clf.get_n_leaves()}")
@@ -178,6 +179,22 @@ class ModelTrainer:
             pickle.dump(self.label_encoder, f)
         print(f"✓ Saved label encoder to {encoder_path}")
 
+    def save_root_split(self, clf, output_dir='reports'):
+        os.makedirs(output_dir, exist_ok=True)
+        root_index = clf.tree_.feature[0]
+        root_feature = self.feature_columns[root_index] if root_index >= 0 else 'leaf'
+        root_threshold = clf.tree_.threshold[0] if root_index >= 0 else None
+        report_path = os.path.join(output_dir, 'root_split.txt')
+
+        with open(report_path, 'w') as f:
+            f.write(f"Root split feature: {root_feature}\n")
+            f.write(f"Root split threshold: {root_threshold}\n")
+
+        print(f"✓ Saved root split info to {report_path}")
+
+    def _fillna_for_sklearn(self, X):
+        return X.fillna(X.mean())
+
 def main():
     """Main training pipeline"""
     print("Starting model training pipeline...")
@@ -210,8 +227,9 @@ def main():
     # Train LightGBM with validation
     lgb_model = trainer.train_lightgbm(X_train, y_train, X_val, y_val)
     
-    # Save models
+    # Save models and metadata
     trainer.save_models(sklearn_clf, lgb_model)
+    trainer.save_root_split(sklearn_clf, output_dir='reports')
     
     # Save known and unknown test sets for evaluation
     known_test = pd.DataFrame(X_test, columns=trainer.feature_columns)
@@ -228,6 +246,22 @@ def main():
     test_data.to_csv('data/test_set.csv', index=False)
     print(f"\n✓ Saved known/unknown test sets to data/test_known.csv and data/test_unknown.csv")
     print(f"✓ Saved combined test set to data/test_set.csv")
+
+    # Save validation sets for threshold calibration and held-out unknown evaluation
+    if X_val.shape[0] > 0:
+        val_known = pd.DataFrame(X_val, columns=trainer.feature_columns)
+        val_known['language'] = trainer.label_encoder.inverse_transform(y_val)
+        val_known['y_true'] = y_val
+        val_known.to_csv('data/val_known.csv', index=False)
+
+    if X_unknown_val.shape[0] > 0:
+        val_unknown = pd.DataFrame(X_unknown_val, columns=trainer.feature_columns)
+        val_unknown['language'] = 'UNKNOWN'
+        val_unknown['y_true'] = y_unknown_val
+        val_unknown.to_csv('data/val_unknown.csv', index=False)
+
+    if X_val.shape[0] > 0 or X_unknown_val.shape[0] > 0:
+        print(f"✓ Saved validation sets to data/val_known.csv and data/val_unknown.csv")
     
     return (
         trainer,

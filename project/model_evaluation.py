@@ -46,8 +46,14 @@ class ModelEvaluator:
             print("  No validation data available for threshold calibration.")
             return 0.6, {}
 
-        proba_known = model.predict_proba(X_known_val)
-        proba_unknown = model.predict_proba(X_unknown_val)
+        # if model is Sklearn 
+        if hasattr(model, 'predict_proba'):
+            proba_known = model.predict_proba(X_known_val)
+            proba_unknown = model.predict_proba(X_unknown_val)
+        # if model is LightGBM 
+        else:
+            proba_known = model.predict(X_known_val)
+            proba_unknown = model.predict(X_unknown_val)
         known_targets = self.label_encoder.inverse_transform(y_known_val)
 
         thresholds = np.linspace(0.2, 0.95, 76)
@@ -122,6 +128,12 @@ class ModelEvaluator:
             'fp': int(fp),
             'fn': int(fn)
         }
+
+    def _fillna_matrix(self, X):
+        if X is None or X.shape[0] == 0:
+            return X
+        df = pd.DataFrame(X)
+        return df.fillna(df.mean()).values
     
     def evaluate_sklearn(
         self,
@@ -137,6 +149,11 @@ class ModelEvaluator:
         print("\n" + "="*60)
         print("Sklearn DecisionTreeClassifier Evaluation")
         print("="*60)
+
+        X_known_test = self._fillna_matrix(X_known_test)
+        X_unknown_test = self._fillna_matrix(X_unknown_test)
+        X_known_val = self._fillna_matrix(X_known_val)
+        X_unknown_val = self._fillna_matrix(X_unknown_val)
 
         if threshold is None:
             threshold, metrics = self.calibrate_threshold(

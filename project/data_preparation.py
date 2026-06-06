@@ -8,6 +8,7 @@ import pandas as pd
 from datasets import load_dataset
 from collections import defaultdict
 import random
+from feature_engineering import FeatureExtractor
 
 # Set random seed for reproducibility
 random.seed(42)
@@ -64,6 +65,12 @@ def truncate_file(content, max_lines=100):
     lines = content.split('\n')
     return '\n'.join(lines[:max_lines])
 
+def is_mislabeled_json(content, language):
+    """Drop JavaScript/TypeScript samples that look more like JSON than real code."""
+    if language not in {"javascript", "typescript", "jsx", "tsx"}:
+        return False
+    return FeatureExtractor.json_like_score(content) > 0.8
+
 def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="data"):
     """
     Download dataset from The Stack v2
@@ -104,6 +111,10 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
                     # Truncate to first 100 lines
                     content = truncate_file(content)
                     
+                    # Drop mislabeled JSON-like content from JS/TS sources
+                    if is_mislabeled_json(content, lang):
+                        continue
+                    
                     data_dict[lang].append({
                         'language': lang,
                         'content': content,
@@ -132,6 +143,7 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
         all_data.extend(samples)
     
     df = pd.DataFrame(all_data)
+    df = df.drop_duplicates(subset=['content'], keep='first')
     df.to_csv(os.path.join(output_dir, "raw_dataset.csv"), index=False)
     print(f"\n✓ Saved {len(df)} samples to raw_dataset.csv")
     
@@ -237,22 +249,54 @@ def create_synthetic_dataset(languages, samples_per_class):
         ],
     }
     
+    def random_comment(lang):
+        comments = {
+            "python": ["# compute result", "# parse input", "# TODO: add tests"],
+            "javascript": ["// update state", "// fetch data", "// eslint-disable-next-line"],
+            "java": ["// initialize service", "// check null", "// TODO implement"],
+            "bash": ["# run pipeline", "# backup files", "# use set -e"],
+            "powershell": ["# list files", "# check status", "# log output"],
+            "sql": ["-- create table", "-- select rows", "-- drop temp table"],
+            "html": ["<!-- main content -->", "<!-- header -->", "<!-- footer -->"],
+            "css": ["/* style wrapper */", "/* responsive layout */"],
+        }
+        return random.choice(comments.get(lang, ["# sample code"]))
+
+    def random_data_line(lang):
+        if lang in {"python", "javascript", "java", "typescript", "tsx", "jsx"}:
+            return random.choice([
+                "const idx = 42;",
+                "let count = items.length;",
+                "const result = values.reduce((acc, x) => acc + x, 0);",
+                "var message = 'ok';",
+                "print('done')" if lang == "python" else "console.log('done');",
+            ])
+        return ""
+
     data_dict = defaultdict(list)
-    
+
     for lang in languages:
         template_list = templates.get(lang, [f"# {lang} code example\nprint('{lang}')"])
-        
+
         for i in range(samples_per_class):
             template = random.choice(template_list)
-            # Add some variation
-            content = template + f"\n# Sample {i}" + "\n" * random.randint(0, 5)
-            
+            content = template
+            if random.random() < 0.6:
+                content += "\n" + random_comment(lang)
+            if random.random() < 0.4:
+                content += "\n" + random_data_line(lang)
+            if random.random() < 0.3:
+                content += "\n" + random_comment(lang)
+            extra_blank_lines = random.randint(0, 3)
+            content += "\n" * extra_blank_lines
+            content = content.strip()
+
             data_dict[lang].append({
                 'language': lang,
                 'content': content,
                 'file_id': f"{lang}_{i}"
             })
-    
+
     return data_dict
 
 if __name__ == "__main__":

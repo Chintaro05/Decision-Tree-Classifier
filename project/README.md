@@ -24,11 +24,13 @@ The dataset undergoes rigorous cleaning:
 - Filter binary/encoded content (> 30% non-ASCII characters)
 - Remove extremely long single-line files
 - Truncate to first 100 lines
+- Drop duplicate content to avoid leakage
+- Filter mislabeled JSON-like JavaScript/TypeScript samples
 - Check for valid structure
 
 ## Features Engineered
 
-21 structural and textual features extracted from file content:
+27+ structural and textual features extracted from file content:
 
 | Feature | Description |
 |---------|-------------|
@@ -70,7 +72,10 @@ project/
 ├── data/
 │   ├── raw_dataset.csv        # Raw files with language labels
 │   ├── features.csv           # Extracted features for training
-│   └── test_set.csv           # Test set with predictions
+│   ├── test_known.csv         # Known class test set
+│   ├── test_unknown.csv       # Held-out unknown test set
+│   ├── val_known.csv          # Known validation set for threshold calibration
+│   └── val_unknown.csv        # Unknown validation set for threshold calibration
 │
 ├── models/
 │   ├── sklearn_tree.pkl       # Trained sklearn model
@@ -87,6 +92,7 @@ project/
     ├── lgb_feature_importance.png        # LightGBM feature importance
     ├── class_distribution.png            # Class balance chart
     ├── feature_distributions.png         # Feature histograms
+    ├── root_split.txt                   # Root tree split feature and threshold
     └── confusion_matrix_*.png            # Confusion matrices
 ```
 
@@ -118,11 +124,11 @@ python main.py
 
 This will:
 1. Download/prepare 32+ languages from The Stack v2
-2. Extract 21 features from raw files
+2. Extract 27+ features from raw files
 3. Train sklearn DecisionTreeClassifier
-4. Train LightGBM classifier
+4. Train LightGBM classifier while preserving native NaN handling for missing numeric features
 5. Evaluate both models with comprehensive metrics
-6. Generate visualizations and reports
+6. Generate visualizations, root split analysis, and reports
 
 ## Models
 
@@ -258,6 +264,7 @@ This allows the classifier to:
 - Identify true unknown formats
 - Flag borderline cases
 - Improve reliability on edge cases
+- Record the root decision-tree split in `reports/root_split.txt` for explainability
 
 ## How to Use Trained Models
 
