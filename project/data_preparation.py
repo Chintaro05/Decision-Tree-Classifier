@@ -1,0 +1,261 @@
+"""
+Data Preparation: Download and clean dataset from The Stack v2
+"""
+
+import os
+import json
+import pandas as pd
+from datasets import load_dataset
+from collections import defaultdict
+import random
+
+# Set random seed for reproducibility
+random.seed(42)
+
+# Define training languages and held-out unknown formats
+KNOWN_LANGUAGES = [
+    "python", "java", "javascript", "typescript", "csharp",
+    "cpp", "c", "ruby", "php", "go",
+    "rust", "kotlin", "swift", "scala", "haskell",
+    "r", "perl", "lua", "shell", "sql",
+    "html", "css", "xml", "markdown", "tex",
+    "dockerfile", "makefile", "julia", "bash", "powershell",
+    "dart", "groovy", "jsx", "tsx"
+]
+UNKNOWN_LANGUAGES = [
+    "json", "yaml", "csv", "toml", "ini", "svg"
+]
+LANGUAGES = KNOWN_LANGUAGES + UNKNOWN_LANGUAGES
+
+def clean_text(text):
+    """Basic text cleaning"""
+    if not isinstance(text, str):
+        return ""
+    return text.strip()
+
+def is_valid_file(content):
+    """Check if file is valid (not empty, not binary-like)"""
+    if not isinstance(content, str):
+        return False
+    
+    # Remove by length
+    if len(content.strip()) < 10:
+        return False
+    
+    # Check for binary/encoded content
+    try:
+        # Check for too many non-ASCII characters
+        non_ascii = sum(1 for c in content if ord(c) > 127)
+        if non_ascii / len(content) > 0.3:  # More than 30% non-ASCII
+            return False
+        
+        # Check for base64 or excessive minification
+        if len(content.split('\n')) < 2 and len(content) > 500:  # Very long single line
+            return False
+            
+        return True
+    except:
+        return False
+
+def truncate_file(content, max_lines=100):
+    """Keep first N lines of file"""
+    if not isinstance(content, str):
+        return ""
+    lines = content.split('\n')
+    return '\n'.join(lines[:max_lines])
+
+def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="data"):
+    """
+    Download dataset from The Stack v2
+    If the remote dataset is unavailable, fallback to synthetic templates.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    
+    print(f"Attempting to download dataset for {len(languages)} languages...")
+    print(f"Target: {samples_per_class} samples per language")
+    
+    data_dict = defaultdict(list)
+    
+    try:
+        # Try to load from The Stack v2
+        for lang in languages:
+            print(f"Loading {lang}...")
+            try:
+                ds = load_dataset(
+                    "bigcode/the-stack-v2",
+                    data_dir=f"data/{lang}",
+                    split="train",
+                    streaming=True,
+                    trust_remote_code=True,
+                )
+                
+                count = 0
+                for sample in ds:
+                    if count >= samples_per_class:
+                        break
+                    
+                    content = sample.get('content', '')
+                    
+                    # Clean and validate
+                    content = clean_text(content)
+                    if not is_valid_file(content):
+                        continue
+                    
+                    # Truncate to first 100 lines
+                    content = truncate_file(content)
+                    
+                    data_dict[lang].append({
+                        'language': lang,
+                        'content': content,
+                        'file_id': f"{lang}_{count}"
+                    })
+                    count += 1
+                
+                print(f"  ✓ Got {len(data_dict[lang])} valid samples for {lang}")
+            except Exception as e:
+                print(f"  ✗ Failed to load {lang}: {e}")
+                # Continue with other languages
+    except Exception as e:
+        print(f"Connection issue: {e}")
+        print("Creating synthetic dataset from templates...\n")
+        data_dict = create_synthetic_dataset(languages, samples_per_class)
+    
+    # If we got very few samples, use synthetic data
+    total_samples = sum(len(v) for v in data_dict.values())
+    if total_samples < len(languages) * 50:
+        print("Insufficient real data. Using synthetic templates...\n")
+        data_dict = create_synthetic_dataset(languages, samples_per_class)
+    
+    # Save raw data
+    all_data = []
+    for lang, samples in data_dict.items():
+        all_data.extend(samples)
+    
+    df = pd.DataFrame(all_data)
+    df.to_csv(os.path.join(output_dir, "raw_dataset.csv"), index=False)
+    print(f"\n✓ Saved {len(df)} samples to raw_dataset.csv")
+    
+    return df
+
+def create_synthetic_dataset(languages, samples_per_class):
+    """Create synthetic dataset with realistic code snippets"""
+    
+    templates = {
+        "python": [
+            "def hello():\n    print('Hello, World!')\n    return True",
+            "import numpy as np\ndata = np.array([1, 2, 3])\nresult = np.mean(data)",
+            "class Calculator:\n    def add(self, a, b):\n        return a + b",
+            "for i in range(10):\n    if i % 2 == 0:\n        print(i)",
+            "import pandas as pd\ndf = pd.read_csv('file.csv')\ndf.head()",
+        ],
+        "java": [
+            "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello\");\n    }\n}",
+            "public interface Service {\n    void execute();\n}",
+            "public class Calculator {\n    public int add(int a, int b) {\n        return a + b;\n    }\n}",
+            "ArrayList<String> list = new ArrayList<>();\nlist.add(\"item\");",
+            "try {\n    int x = 10 / 0;\n} catch (Exception e) {\n    e.printStackTrace();\n}",
+        ],
+        "javascript": [
+            "function hello() {\n    console.log('Hello, World!');\n    return true;\n}",
+            "const arr = [1, 2, 3];\nconst doubled = arr.map(x => x * 2);",
+            "async function fetchData() {\n    const response = await fetch('/api/data');\n    return response.json();\n}",
+            "class Calculator {\n    add(a, b) {\n        return a + b;\n    }\n}",
+            "const obj = { name: 'John', age: 30 };\nconst {name, age} = obj;",
+        ],
+        "html": [
+            "<!DOCTYPE html>\n<html>\n<head><title>Page</title></head>\n<body>\n<h1>Welcome</h1>\n</body>\n</html>",
+            "<div class=\"container\">\n    <p>Content here</p>\n</div>",
+            "<?xml version=\"1.0\"?>\n<root>\n    <item>Value</item>\n</root>",
+        ],
+        "css": [
+            ".container {\n    display: flex;\n    justify-content: center;\n}\n.item {\n    color: blue;\n}",
+            "body {\n    margin: 0;\n    padding: 0;\n    font-family: Arial;\n}\na:hover {\n    text-decoration: underline;\n}",
+        ],
+        "json": [
+            '{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}',
+            '{\"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"}]}',
+        ],
+        "yaml": [
+            "name: John\nage: 30\ncity: New York",
+            "items:\n  - id: 1\n    name: Item 1\n  - id: 2\n    name: Item 2",
+        ],
+        "sql": [
+            "SELECT * FROM users WHERE age > 18;",
+            "INSERT INTO users (name, email) VALUES ('John', 'john@example.com');",
+            "UPDATE products SET price = 99.99 WHERE id = 1;",
+        ],
+        "markdown": [
+            "# Title\n## Subtitle\nThis is **bold** and *italic* text.",
+            "- Item 1\n- Item 2\n  - Nested item\n\n```python\ncode block\n```",
+        ],
+        "dockerfile": [
+            "FROM python:3.9\nWORKDIR /app\nCOPY . .\nRUN pip install -r requirements.txt\nCMD [\"python\", \"app.py\"]",
+            "FROM ubuntu:20.04\nRUN apt-get update && apt-get install -y python3",
+        ],
+        "makefile": [
+            ".PHONY: build run\nbuild:\n\tpython setup.py build\nrun:\n\tpython main.py",
+        ],
+        "bash": [
+            "#!/bin/bash\nfor file in *.txt; do\n  echo \"Processing $file\"\ndone",
+            "if [ -f \"/tmp/data.csv\" ]; then\n  cat /tmp/data.csv\nfi",
+        ],
+        "powershell": [
+            "Write-Host \"Hello World\"\nGet-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }",
+            "$data = Import-Csv 'file.csv'\n$data | ForEach-Object { $_.Name }",
+        ],
+        "dart": [
+            "void main() {\n  print('Hello, Dart');\n}",
+            "class Person {\n  String name;\n  Person(this.name);\n}",
+        ],
+        "groovy": [
+            "def hello() {\n  println 'Hello from Groovy'\n}",
+            "def list = [1, 2, 3]\nlist.each { println it }",
+        ],
+        "jsx": [
+            "import React from 'react';\nconst App = () => <div>Hello JSX</div>;\nexport default App;",
+            "const element = <button onClick={() => alert('click')}>Click</button>;",
+        ],
+        "tsx": [
+            "import React from 'react';\ninterface Props { name: string; }\nconst App: React.FC<Props> = ({ name }) => <div>{name}</div>;\nexport default App;",
+            "const value: number = 42;\nconst message: string = `Value is ${value}`;",
+        ],
+        "toml": [
+            "[package]\nname = \"example\"\nversion = \"0.1.0\"",
+            "[database]\nserver = \"192.168.1.1\nports = [ 8001, 8001, 8002 ]",
+        ],
+        "ini": [
+            "[settings]\nname = example\nenabled = true",
+            "[user]\nusername = admin\npassword = secret",
+        ],
+        "csv": [
+            "name,age,city\nJohn,30,New York\nAlice,25,London",
+            "id,value\n1,10\n2,20\n3,30",
+        ],
+        "svg": [
+            "<svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\" /></svg>",
+            "<svg xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"100\" height=\"100\" fill=\"blue\" /></svg>",
+        ],
+    }
+    
+    data_dict = defaultdict(list)
+    
+    for lang in languages:
+        template_list = templates.get(lang, [f"# {lang} code example\nprint('{lang}')"])
+        
+        for i in range(samples_per_class):
+            template = random.choice(template_list)
+            # Add some variation
+            content = template + f"\n# Sample {i}" + "\n" * random.randint(0, 5)
+            
+            data_dict[lang].append({
+                'language': lang,
+                'content': content,
+                'file_id': f"{lang}_{i}"
+            })
+    
+    return data_dict
+
+if __name__ == "__main__":
+    df = download_dataset()
+    print("\nDataset Statistics:")
+    print(df['language'].value_counts())
