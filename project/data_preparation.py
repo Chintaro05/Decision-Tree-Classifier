@@ -102,10 +102,10 @@ def download_dataset(languages=LANGUAGES, samples_per_class=1000, output_dir="da
             print(f"Loading {lang}...")
             try:
                 ds = load_dataset(
-                    "bigcode/the-stack-v2-dedup",
-                    data_dir=f"data/{lang}",
+                    "bigcode/the-stack", 
+                    name=lang,          
                     split="train",
-                    streaming=True,
+                    streaming=True
                 )
                 
                 count = 0
