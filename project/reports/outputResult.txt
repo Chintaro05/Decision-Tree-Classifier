@@ -1,0 +1,389 @@
+Cloning into 'Decision-Tree-Classifier'...
+remote: Enumerating objects: 92, done.
+remote: Counting objects: 100% (92/92), done.
+remote: Compressing objects: 100% (68/68), done.
+remote: Total 92 (delta 48), reused 66 (delta 23), pack-reused 0 (from 0)
+Receiving objects: 100% (92/92), 259.15 KiB | 6.64 MiB/s, done.
+Resolving deltas: 100% (48/48), done.
+/content/Decision-Tree-Classifier/project/Decision-Tree-Classifier/project
+Requirement already satisfied: pandas>=1.5.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 1)) (2.2.2)
+Requirement already satisfied: numpy>=1.24.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 2)) (2.0.2)
+Requirement already satisfied: scikit-learn>=1.3.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 3)) (1.6.1)
+Requirement already satisfied: lightgbm>=4.0.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 4)) (4.6.0)
+Requirement already satisfied: matplotlib>=3.7.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 5)) (3.10.0)
+Requirement already satisfied: seaborn>=0.12.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 6)) (0.13.2)
+Requirement already satisfied: datasets>=2.14.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 7)) (4.0.0)
+Requirement already satisfied: huggingface-hub>=0.17.0 in /usr/local/lib/python3.12/dist-packages (from -r requirements.txt (line 8)) (1.17.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas>=1.5.0->-r requirements.txt (line 1)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas>=1.5.0->-r requirements.txt (line 1)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas>=1.5.0->-r requirements.txt (line 1)) (2026.2)
+Requirement already satisfied: scipy>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn>=1.3.0->-r requirements.txt (line 3)) (1.16.3)
+Requirement already satisfied: joblib>=1.2.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn>=1.3.0->-r requirements.txt (line 3)) (1.5.3)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /usr/local/lib/python3.12/dist-packages (from scikit-learn>=1.3.0->-r requirements.txt (line 3)) (3.6.0)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (1.5.0)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (26.2)
+Requirement already satisfied: pillow>=8 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (11.3.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.12/dist-packages (from matplotlib>=3.7.0->-r requirements.txt (line 5)) (3.3.2)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (3.29.0)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (18.1.0)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (0.3.8)
+Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (2.32.4)
+Requirement already satisfied: tqdm>=4.66.3 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (4.67.3)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (3.7.0)
+Requirement already satisfied: multiprocess<0.70.17 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (0.70.16)
+Requirement already satisfied: fsspec<=2025.3.0,>=2023.1.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (2025.3.0)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from datasets>=2.14.0->-r requirements.txt (line 7)) (6.0.3)
+Requirement already satisfied: click>=8.4.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (8.4.1)
+Requirement already satisfied: hf-xet<2.0.0,>=1.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (1.5.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (0.28.1)
+Requirement already satisfied: typer<0.26.0,>=0.20.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (0.25.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (4.15.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (3.14.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (4.13.0)
+Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (2026.5.20)
+Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (1.0.9)
+Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1,>=0.23.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (3.18)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (0.16.0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas>=1.5.0->-r requirements.txt (line 1)) (1.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.14.0->-r requirements.txt (line 7)) (3.4.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets>=2.14.0->-r requirements.txt (line 7)) (2.5.0)
+Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.12/dist-packages (from typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (1.5.4)
+Requirement already satisfied: rich>=13.8.0 in /usr/local/lib/python3.12/dist-packages (from typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (13.9.4)
+Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.12/dist-packages (from typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (0.0.4)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (2.6.2)
+Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (0.5.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.3.0,>=2023.1.0->datasets>=2.14.0->-r requirements.txt (line 7)) (1.24.2)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (2.20.0)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub>=0.17.0->-r requirements.txt (line 8)) (0.1.2)
+======================================================================
+DECISION TREE TEXT CLASSIFIER — COMPLETE PIPELINE
+======================================================================
+
+[STEP 1/5] Data Preparation
+----------------------------------------------------------------------
+Attempting to prepare dataset for 40 languages/formats...
+Target: 1000 samples per class
+Remote dataset: bigcode/the-stack-smol
+
+Loading python from bigcode/the-stack-smol/data/python...
+README.md: 100% 3.30k/3.30k [00:00<00:00, 6.57MB/s]
+  ✓ Got 1000 valid real samples for python
+Loading java from bigcode/the-stack-smol/data/java...
+  ✓ Got 1000 valid real samples for java
+Loading javascript from bigcode/the-stack-smol/data/javascript...
+  ✓ Got 1000 valid real samples for javascript
+Loading typescript from bigcode/the-stack-smol/data/typescript...
+  ✓ Got 1000 valid real samples for typescript
+Loading csharp from bigcode/the-stack-smol/data/c-sharp...
+  ✓ Got 1000 valid real samples for csharp
+Loading cpp from bigcode/the-stack-smol/data/c++...
+  ✓ Got 1000 valid real samples for cpp
+Loading c from bigcode/the-stack-smol/data/c...
+  ✓ Got 1000 valid real samples for c
+Loading ruby from bigcode/the-stack-smol/data/ruby...
+  ✓ Got 1000 valid real samples for ruby
+Loading php from bigcode/the-stack-smol/data/php...
+  ✓ Got 1000 valid real samples for php
+Loading go from bigcode/the-stack-smol/data/go...
+  ✓ Got 1000 valid real samples for go
+Loading rust from bigcode/the-stack-smol/data/rust...
+  ✓ Got 1000 valid real samples for rust
+Loading kotlin...
+  - kotlin: no stable The Stack-smol folder. Generating synthetic samples.
+Loading swift...
+  - swift: no stable The Stack-smol folder. Generating synthetic samples.
+Loading scala from bigcode/the-stack-smol/data/scala...
+  ✓ Got 1000 valid real samples for scala
+Loading haskell from bigcode/the-stack-smol/data/haskell...
+  ✓ Got 1000 valid real samples for haskell
+Loading r...
+  - r: no stable The Stack-smol folder. Generating synthetic samples.
+Loading perl from bigcode/the-stack-smol/data/perl...
+  ✓ Got 1000 valid real samples for perl
+Loading lua from bigcode/the-stack-smol/data/lua...
+  ✓ Got 1000 valid real samples for lua
+Loading shell from bigcode/the-stack-smol/data/shell...
+  ✓ Got 1000 valid real samples for shell
+Loading sql from bigcode/the-stack-smol/data/sql...
+  ✓ Got 1000 valid real samples for sql
+Loading html from bigcode/the-stack-smol/data/html...
+  ✓ Got 1000 valid real samples for html
+Loading css from bigcode/the-stack-smol/data/css...
+  ✓ Got 1000 valid real samples for css
+Loading xml...
+  - xml: no stable The Stack-smol folder. Generating synthetic samples.
+Loading markdown from bigcode/the-stack-smol/data/markdown...
+  ✓ Got 1000 valid real samples for markdown
+Loading tex from bigcode/the-stack-smol/data/tex...
+  ✓ Got 1000 valid real samples for tex
+Loading dockerfile from bigcode/the-stack-smol/data/dockerfile...
+  ✓ Got 1000 valid real samples for dockerfile
+Loading makefile from bigcode/the-stack-smol/data/makefile...
+  ✓ Got 1000 valid real samples for makefile
+Loading julia from bigcode/the-stack-smol/data/julia...
+  ✓ Got 1000 valid real samples for julia
+Loading bash from bigcode/the-stack-smol/data/shell...
+  ✓ Got 1000 valid real samples for bash
+Loading powershell from bigcode/the-stack-smol/data/powershell...
+  ✓ Got 1000 valid real samples for powershell
+Loading dart...
+  - dart: no stable The Stack-smol folder. Generating synthetic samples.
+Loading groovy...
+  - groovy: no stable The Stack-smol folder. Generating synthetic samples.
+Loading jsx...
+  - jsx: no stable The Stack-smol folder. Generating synthetic samples.
+Loading tsx...
+  - tsx: no stable The Stack-smol folder. Generating synthetic samples.
+Loading json...
+  - json: no stable The Stack-smol folder. Generating synthetic samples.
+Loading yaml...
+  - yaml: no stable The Stack-smol folder. Generating synthetic samples.
+Loading csv...
+  - csv: no stable The Stack-smol folder. Generating synthetic samples.
+Loading toml...
+  - toml: no stable The Stack-smol folder. Generating synthetic samples.
+Loading ini...
+  - ini: no stable The Stack-smol folder. Generating synthetic samples.
+Loading svg...
+  - svg: no stable The Stack-smol folder. Generating synthetic samples.
+
+✓ Saved 34032 samples to data/raw_dataset.csv
+
+[STEP 2/5] Feature Engineering
+----------------------------------------------------------------------
+Loading raw dataset...
+Total samples: 34032
+Classes: 40
+
+Extracting features...
+Features extracted: 91
+Final dataset shape: (34032, 93)
+
+✓ Saved to data/features.csv
+
+[STEP 3/5] Model Training
+----------------------------------------------------------------------
+
+Data shapes:
+  X_train:       (18579, 91)
+  X_val:         (4645, 91)
+  X_test:        (5806, 91)
+  X_unknown_val: (2501, 91)
+  X_unknown_test:(2501, 91)
+  Classes:       34
+
+============================================================
+Training sklearn DecisionTreeClassifier
+============================================================
+✓ Tree depth: 15
+✓ Leaves: 346
+
+============================================================
+Training LightGBM Classifier
+============================================================
+[50]	train's multi_logloss: 1.19321	valid's multi_logloss: 2.12666
+✓ LightGBM trained with 36 boosting rounds
+✓ Saved sklearn model  -> models/sklearn_tree.pkl
+✓ Saved LightGBM model -> models/lgb_model.pkl
+✓ Saved metadata + encoder -> models/
+✓ Saved root split info -> reports/root_split.txt
+
+✓ Splits saved.
+
+[STEP 4/5] Model Evaluation
+----------------------------------------------------------------------
+✓ Models loaded successfully
+
+============================================================
+Sklearn DecisionTreeClassifier Evaluation
+============================================================
+
+Calibrating unknown detection threshold...
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+  Best threshold: 0.85
+  Known accuracy at threshold: 0.5412
+  Unknown recall at threshold: 1.0000
+  Unknown precision at threshold: 0.5596
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but DecisionTreeClassifier was fitted with feature names
+  warnings.warn(
+
+Threshold used: 0.85
+Accuracy (known classes): 0.6977
+Unknown detection precision: 0.5008
+Unknown detection recall: 1.0000
+Unknown detection F1: 0.6674
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+        bash     0.5478    0.4300    0.4818       200
+           c     0.7118    0.6050    0.6541       200
+         cpp     0.7989    0.7350    0.7656       200
+      csharp     0.9389    0.8450    0.8895       200
+         css     0.9032    0.7000    0.7887       200
+        dart     0.0000    0.0000    0.0000         1
+  dockerfile     0.9949    0.9800    0.9874       200
+          go     0.8354    0.9900    0.9062       200
+      groovy     0.0000    0.0000    0.0000         1
+     haskell     0.8913    0.8200    0.8542       200
+        html     0.8907    0.8150    0.8512       200
+        java     0.9948    0.9650    0.9797       200
+  javascript     0.5357    0.3000    0.3846       200
+         jsx     0.9950    1.0000    0.9975       200
+       julia     0.6818    0.0750    0.1351       200
+      kotlin     0.0000    0.0000    0.0000         1
+         lua     0.5091    0.7000    0.5895       200
+    makefile     0.5903    0.6700    0.6276       200
+    markdown     0.1715    0.8350    0.2845       200
+        perl     0.9538    0.6200    0.7515       200
+         php     0.9439    0.9250    0.9343       200
+  powershell     0.3200    0.2000    0.2462       200
+      python     0.9873    0.7750    0.8683       200
+           r     0.0000    0.0000    0.0000         2
+        ruby     0.5597    0.8900    0.6873       200
+        rust     0.9774    0.8650    0.9178       200
+       scala     0.9572    0.8950    0.9251       200
+       shell     0.5195    0.4000    0.4520       200
+         sql     0.8644    0.2550    0.3938       200
+       swift     0.0000    0.0000    0.0000         1
+         tex     0.9658    0.5650    0.7129       200
+         tsx     1.0000    1.0000    1.0000       200
+  typescript     0.5970    0.4000    0.4790       200
+         xml     1.0000    1.0000    1.0000       200
+
+    accuracy                         0.6977      5806
+   macro avg     0.6658    0.5957    0.6043      5806
+weighted avg     0.7798    0.6977    0.7077      5806
+
+Macro F1-Score: 0.6043
+Weighted F1-Score: 0.7077
+
+============================================================
+LightGBM Classifier Evaluation
+============================================================
+
+Calibrating unknown detection threshold...
+  Best threshold: 0.60
+  Known accuracy at threshold: 0.7554
+  Unknown recall at threshold: 0.6997
+  Unknown precision at threshold: 0.6833
+
+Threshold used: 0.60
+Accuracy (known classes): 0.8484
+Unknown detection precision: 0.6266
+Unknown detection recall: 0.7025
+Unknown detection F1: 0.6624
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+        bash     0.4489    0.3950    0.4202       200
+           c     0.8019    0.8500    0.8252       200
+         cpp     0.8596    0.7650    0.8095       200
+      csharp     0.9554    0.9650    0.9602       200
+         css     0.9643    0.9450    0.9545       200
+        dart     0.0909    1.0000    0.1667         1
+  dockerfile     0.9949    0.9800    0.9874       200
+          go     0.9949    0.9850    0.9899       200
+      groovy     0.0000    0.0000    0.0000         1
+     haskell     0.9796    0.9600    0.9697       200
+        html     0.9064    0.9200    0.9132       200
+        java     1.0000    0.9900    0.9950       200
+  javascript     0.7282    0.7100    0.7190       200
+         jsx     1.0000    1.0000    1.0000       200
+       julia     0.8514    0.9450    0.8957       200
+      kotlin     0.0000    0.0000    0.0000         1
+         lua     0.9391    0.9250    0.9320       200
+    makefile     0.9738    0.9300    0.9514       200
+    markdown     0.8706    0.8750    0.8728       200
+        perl     0.9724    0.8800    0.9239       200
+         php     0.9741    0.9400    0.9567       200
+  powershell     0.8700    0.8700    0.8700       200
+      python     0.9784    0.9050    0.9403       200
+           r     0.0000    0.0000    0.0000         2
+        ruby     0.9665    0.8650    0.9129       200
+        rust     0.9897    0.9600    0.9746       200
+       scala     0.9746    0.9600    0.9673       200
+       shell     0.4293    0.4250    0.4271       200
+         sql     0.9343    0.9250    0.9296       200
+       swift     0.0000    0.0000    0.0000         1
+         tex     0.9282    0.9700    0.9487       200
+         tsx     1.0000    0.8550    0.9218       200
+  typescript     0.7794    0.7950    0.7871       200
+         xml     1.0000    0.1350    0.2379       200
+
+    accuracy                         0.8484      5806
+   macro avg     0.7693    0.7537    0.7400      5806
+weighted avg     0.8979    0.8484    0.8610      5806
+
+Macro F1-Score: 0.7400
+Weighted F1-Score: 0.8610
+
+============================================================
+Model Comparison
+============================================================
+
+       Model  Accuracy  Macro F1  Weighted F1  Unknown Samples
+Sklearn Tree  0.697726  0.604276     0.707730             2501
+    LightGBM  0.848433  0.740014     0.860994             2501
+
+🏆 Winner (by Macro F1-Score): LightGBM
+✓ Saved threshold table -> reports/threshold_table.csv
+
+[STEP 5/5] Visualization
+----------------------------------------------------------------------
+Creating sklearn tree plot...
+✓ Saved to reports/decision_tree_plot.png
+Creating sklearn feature importance plot...
+✓ Saved to reports/sklearn_feature_importance.png
+
+Top-15 features:
+  r_semi                     0.0692
+  scope_op                   0.0607
+  r_gt                       0.0574
+  kw_import                  0.0496
+  r_colon                    0.0435
+  sb_bash                    0.0414
+  has_php_tag                0.0410
+  kw_func                    0.0409
+  has_docker_from            0.0408
+  kw_package                 0.0403
+  kw_namespace               0.0401
+  kw_fn                      0.0390
+  kw_include                 0.0388
+  kw_const                   0.0379
+  xml_like_score             0.0356
+Creating LightGBM feature importance plot...
+✓ Saved to reports/lgb_feature_importance.png
+Creating class distribution plot...
+✓ Saved to reports/class_distribution.png
+Creating feature distribution plots...
+✓ Saved to reports/feature_distributions.png
+Creating threshold calibration curve...
+✓ Saved to reports/threshold_curve.png
+
+======================================================================
+✓ PIPELINE COMPLETED SUCCESSFULLY!
+======================================================================
+
+Generated artifacts:
+  models/  : sklearn_tree.pkl, lgb_model.pkl, metadata.json, label_encoder.pkl
+  data/    : raw_dataset.csv, features.csv, test_known.csv, test_unknown.csv
+  reports/ : model_comparison.csv, threshold_table.csv,
+             decision_tree_plot.png, sklearn_feature_importance.png,
+             lgb_feature_importance.png, threshold_curve.png,
+             class_distribution.png, feature_distributions.png
+======================================================================
