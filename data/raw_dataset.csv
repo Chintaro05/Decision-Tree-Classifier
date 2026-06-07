@@ -2,4735 +2,516 @@ language,content,file_id
 python,"def hello():
     print('Hello, World!')
     return True
-# parse input
-let count = items.length;",python_0
+# parse input",python_0
+python,"import numpy as np
+data = np.array([1, 2, 3])
+result = np.mean(data)
+# TODO: add tests",python_1
+python,"def hello():
+    print('Hello, World!')
+    return True",python_2
 python,"import pandas as pd
 df = pd.read_csv('file.csv')
 df.head()
-# compute result
-let count = items.length;",python_1
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests",python_2
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
 # parse input",python_3
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-var message = 'ok';
-# parse input",python_4
-python,"def hello():
-    print('Hello, World!')
-    return True",python_5
 python,"def hello():
     print('Hello, World!')
     return True
-# TODO: add tests",python_6
+# compute result",python_4
+python,"import numpy as np
+data = np.array([1, 2, 3])
+result = np.mean(data)",python_5
+python,"import pandas as pd
+df = pd.read_csv('file.csv')
+df.head()
+# compute result",python_8
+python,"class Calculator:
+    def add(self, a, b):
+        return a + b
+# compute result",python_10
+python,"class Calculator:
+    def add(self, a, b):
+        return a + b
+# parse input",python_11
+python,"for i in range(10):
+    if i % 2 == 0:
+        print(i)",python_14
+python,"for i in range(10):
+    if i % 2 == 0:
+        print(i)
+# parse input",python_15
+python,"import pandas as pd
+df = pd.read_csv('file.csv')
+df.head()",python_16
+python,"class Calculator:
+    def add(self, a, b):
+        return a + b",python_17
+python,"for i in range(10):
+    if i % 2 == 0:
+        print(i)
+# TODO: add tests",python_21
+python,"import numpy as np
+data = np.array([1, 2, 3])
+result = np.mean(data)
+# parse input",python_26
+python,"for i in range(10):
+    if i % 2 == 0:
+        print(i)
+# compute result",python_35
+python,"import pandas as pd
+df = pd.read_csv('file.csv')
+df.head()
+# TODO: add tests",python_37
+python,"import numpy as np
+data = np.array([1, 2, 3])
+result = np.mean(data)
+# compute result",python_55
+python,"class Calculator:
+    def add(self, a, b):
+        return a + b
+# TODO: add tests",python_71
 python,"def hello():
     print('Hello, World!')
     return True
-# compute result",python_7
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input",python_8
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input",python_9
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input",python_10
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b",python_11
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)",python_13
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-# compute result",python_14
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-let count = items.length;",python_15
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-# compute result",python_16
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-const idx = 42;",python_18
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-const idx = 42;",python_19
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-let count = items.length;",python_21
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);",python_22
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-# parse input",python_23
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-var message = 'ok';",python_24
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-# TODO: add tests",python_25
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests",python_26
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-print('done')",python_27
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-const idx = 42;",python_28
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-# compute result",python_29
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result",python_30
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-# TODO: add tests",python_31
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-var message = 'ok';
-# compute result",python_33
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input",python_35
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-var message = 'ok';
-# TODO: add tests",python_36
-python,"def hello():
-    print('Hello, World!')
-    return True
-let count = items.length;
-# compute result",python_39
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-print('done')
-# compute result",python_40
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-# TODO: add tests",python_41
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-# parse input",python_42
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-# compute result",python_43
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-let count = items.length;
-# compute result",python_46
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-# TODO: add tests",python_47
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-var message = 'ok';",python_48
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-# TODO: add tests",python_49
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-# compute result",python_51
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-# compute result",python_52
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-const idx = 42;",python_56
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);",python_58
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-print('done')",python_59
-python,"def hello():
-    print('Hello, World!')
-    return True
-print('done')",python_60
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);",python_61
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-const idx = 42;",python_62
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()",python_63
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-# parse input",python_67
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)",python_68
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-const idx = 42;
-# parse input",python_71
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests",python_72
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-# compute result",python_73
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-# compute result",python_74
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input",python_75
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const idx = 42;",python_78
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-let count = items.length;
-# TODO: add tests",python_79
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-var message = 'ok';",python_80
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-# TODO: add tests",python_81
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-var message = 'ok';",python_82
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-var message = 'ok';
-# parse input",python_86
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result",python_88
-python,"def hello():
-    print('Hello, World!')
-    return True
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_89
-python,"def hello():
-    print('Hello, World!')
-    return True
-const idx = 42;",python_90
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-# TODO: add tests",python_91
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-print('done')",python_94
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-print('done')",python_96
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-const result = values.reduce((acc, x) => acc + x, 0);",python_97
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests",python_98
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-var message = 'ok';",python_100
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-let count = items.length;",python_101
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-# compute result",python_102
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-let count = items.length;",python_104
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-print('done')",python_108
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result",python_111
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-var message = 'ok';
-# compute result",python_112
-python,"def hello():
-    print('Hello, World!')
-    return True
-var message = 'ok';",python_114
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-print('done')",python_115
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-let count = items.length;",python_117
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result",python_122
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-const idx = 42;",python_128
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-var message = 'ok';",python_129
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-print('done')
-# parse input",python_132
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-const idx = 42;",python_134
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);",python_135
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-let count = items.length;",python_136
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-print('done')
-# compute result",python_137
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-print('done')",python_139
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-var message = 'ok';
-# parse input",python_140
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-print('done')",python_142
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-let count = items.length;",python_143
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-# compute result",python_148
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-var message = 'ok';",python_149
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);",python_160
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-# parse input",python_162
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-let count = items.length;",python_163
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-print('done')
-# parse input",python_164
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-# compute result",python_165
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-var message = 'ok';
-# compute result",python_168
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_171
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_172
-python,"def hello():
-    print('Hello, World!')
-    return True
-let count = items.length;",python_174
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-# parse input",python_178
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-# TODO: add tests",python_180
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-print('done')",python_184
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-print('done')",python_193
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-let count = items.length;",python_196
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-# TODO: add tests",python_197
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);",python_198
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-const idx = 42;
-# TODO: add tests",python_199
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-let count = items.length;",python_202
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-const idx = 42;
-# TODO: add tests",python_203
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-print('done')",python_207
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-var message = 'ok';",python_215
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const idx = 42;",python_216
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);",python_221
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-print('done')",python_223
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);",python_227
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-# parse input",python_231
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-var message = 'ok';",python_232
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-let count = items.length;
-# TODO: add tests",python_236
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-var message = 'ok';",python_238
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-# TODO: add tests",python_240
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-const idx = 42;",python_248
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-let count = items.length;",python_249
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-# TODO: add tests",python_252
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-const idx = 42;",python_258
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-const idx = 42;
-# TODO: add tests",python_259
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-let count = items.length;",python_262
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const idx = 42;
-# compute result",python_264
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);",python_265
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-let count = items.length;",python_266
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-print('done')",python_270
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-print('done')",python_273
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-print('done')",python_275
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);",python_276
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const result = values.reduce((acc, x) => acc + x, 0);",python_283
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-var message = 'ok';
-# parse input",python_284
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-var message = 'ok';",python_289
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-print('done')
-# TODO: add tests",python_291
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-# TODO: add tests",python_292
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-const result = values.reduce((acc, x) => acc + x, 0);",python_293
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-var message = 'ok';",python_296
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-var message = 'ok';",python_304
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_306
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-var message = 'ok';
-# compute result",python_313
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-var message = 'ok';",python_317
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-var message = 'ok';
-# parse input",python_324
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-print('done')
-# TODO: add tests",python_331
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_341
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-let count = items.length;",python_350
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-const result = values.reduce((acc, x) => acc + x, 0);",python_353
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-const idx = 42;
-# compute result",python_355
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-var message = 'ok';
-# compute result",python_359
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-let count = items.length;
-# TODO: add tests",python_365
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-var message = 'ok';",python_370
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-var message = 'ok';",python_377
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-# parse input",python_383
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-let count = items.length;
-# parse input",python_388
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);",python_389
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-print('done')
-# TODO: add tests",python_395
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-var message = 'ok';",python_398
-python,"def hello():
-    print('Hello, World!')
-    return True
-const result = values.reduce((acc, x) => acc + x, 0);",python_408
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-const idx = 42;",python_412
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-# compute result",python_422
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-print('done')",python_424
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-# TODO: add tests",python_445
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-# parse input",python_449
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-let count = items.length;
-# TODO: add tests",python_452
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-const idx = 42;",python_456
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const idx = 42;
-# TODO: add tests",python_467
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-print('done')
-# compute result",python_468
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-let count = items.length;
-# parse input",python_475
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);
-# TODO: add tests",python_478
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-# parse input",python_479
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-let count = items.length;
-# TODO: add tests",python_484
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-const idx = 42;
-# TODO: add tests",python_486
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-let count = items.length;
-# parse input",python_488
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-var message = 'ok';
-# compute result",python_489
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-var message = 'ok';",python_490
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const idx = 42;
-# TODO: add tests",python_491
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-print('done')",python_494
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-# parse input",python_495
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-print('done')",python_497
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-# parse input",python_498
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-print('done')
-# compute result",python_505
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-print('done')
-# TODO: add tests",python_513
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);",python_514
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-var message = 'ok';
-# parse input",python_518
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_519
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-var message = 'ok';
-# TODO: add tests",python_535
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-let count = items.length;
-# TODO: add tests",python_539
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const result = values.reduce((acc, x) => acc + x, 0);
-# TODO: add tests",python_561
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_575
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# parse input
-const idx = 42;
-# parse input",python_580
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-# TODO: add tests",python_583
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-const idx = 42;
-# compute result",python_596
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-# compute result",python_611
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-let count = items.length;
-# parse input",python_614
-python,"def hello():
-    print('Hello, World!')
-    return True
-print('done')
-# parse input",python_617
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-var message = 'ok';
-# TODO: add tests",python_618
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_636
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-print('done')
-# compute result",python_646
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-print('done')
-# TODO: add tests",python_653
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# TODO: add tests",python_658
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-const idx = 42;
-# compute result",python_660
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# parse input
-const idx = 42;
-# TODO: add tests",python_683
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-print('done')
-# compute result",python_684
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-let count = items.length;
-# parse input",python_709
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_730
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-print('done')
-# TODO: add tests",python_739
-python,"def hello():
-    print('Hello, World!')
-    return True
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);",python_743
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-print('done')
-# TODO: add tests",python_747
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-let count = items.length;
-# compute result",python_748
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-var message = 'ok';
-# TODO: add tests",python_775
-python,"def hello():
-    print('Hello, World!')
-    return True
-# TODO: add tests
-print('done')",python_776
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-let count = items.length;
-# compute result",python_778
-python,"def hello():
-    print('Hello, World!')
-    return True
-const idx = 42;
-# parse input",python_786
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# compute result
-# TODO: add tests",python_792
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# TODO: add tests
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_799
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);
-# TODO: add tests",python_809
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# compute result
-const result = values.reduce((acc, x) => acc + x, 0);
-# TODO: add tests",python_816
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-let count = items.length;
-# TODO: add tests",python_836
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-# compute result",python_839
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-const idx = 42;
-# parse input",python_862
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# compute result
-const idx = 42;",python_878
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_881
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# TODO: add tests
-var message = 'ok';
-# parse input",python_892
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-print('done')
-# parse input",python_897
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-# compute result",python_900
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-const result = values.reduce((acc, x) => acc + x, 0);
-# compute result",python_928
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-const result = values.reduce((acc, x) => acc + x, 0);
-# parse input",python_935
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-const idx = 42;
-# compute result",python_942
-python,"def hello():
-    print('Hello, World!')
-    return True
-# parse input
-const idx = 42;",python_948
-python,"import pandas as pd
-df = pd.read_csv('file.csv')
-df.head()
-# TODO: add tests
-# parse input",python_949
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-# TODO: add tests
-const idx = 42;",python_952
-python,"for i in range(10):
-    if i % 2 == 0:
-        print(i)
-let count = items.length;
-# TODO: add tests",python_960
-python,"class Calculator:
-    def add(self, a, b):
-        return a + b
-# parse input
-print('done')
-# compute result",python_970
-python,"import numpy as np
-data = np.array([1, 2, 3])
-result = np.mean(data)
-# parse input
-const idx = 42;
-# compute result",python_971
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-const idx = 42;",java_0
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-// check null",java_1
+# TODO: add tests",python_73
 java,"try {
     int x = 10 / 0;
 } catch (Exception e) {
     e.printStackTrace();
-}",java_2
+}",java_0
+java,"public interface Service {
+    void execute();
+}",java_1
 java,"public class Calculator {
     public int add(int a, int b) {
         return a + b;
     }
 }
-// initialize service",java_3
-java,"public interface Service {
-    void execute();
+// initialize service",java_2
+java,"try {
+    int x = 10 / 0;
+} catch (Exception e) {
+    e.printStackTrace();
 }
-// check null",java_4
+// TODO implement",java_3
 java,"public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(""Hello"");
     }
 }
-// check null",java_5
+// initialize service",java_4
 java,"ArrayList<String> list = new ArrayList<>();
 list.add(""item"");",java_6
-java,"public interface Service {
-    void execute();
-}
-// initialize service",java_8
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-let count = items.length;",java_9
 java,"try {
     int x = 10 / 0;
 } catch (Exception e) {
     e.printStackTrace();
 }
-var message = 'ok';",java_10
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-// initialize service",java_11
+// initialize service",java_7
 java,"public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(""Hello"");
     }
-}
-console.log('done');",java_12
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement",java_13
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service",java_14
-java,"public interface Service {
-    void execute();
-}
-// check null
-// check null",java_15
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement",java_16
-java,"public interface Service {
-    void execute();
-}",java_17
+}",java_8
 java,"public class Calculator {
     public int add(int a, int b) {
         return a + b;
     }
 }
-// initialize service
-// check null",java_19
-java,"public interface Service {
-    void execute();
-}
-// TODO implement",java_20
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-console.log('done');
-// initialize service",java_25
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service",java_26
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-const idx = 42;",java_27
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-var message = 'ok';",java_28
+// TODO implement",java_9
 java,"public class Calculator {
     public int add(int a, int b) {
         return a + b;
     }
-}
-// TODO implement",java_29
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-var message = 'ok';",java_30
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-console.log('done');",java_34
-java,"public interface Service {
-    void execute();
-}
-// check null
-var message = 'ok';
-// check null",java_36
+}",java_11
 java,"ArrayList<String> list = new ArrayList<>();
 list.add(""item"");
-// check null
-const idx = 42;
-// check null",java_37
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}",java_38
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null",java_40
+// TODO implement",java_15
 java,"public class HelloWorld {
     public static void main(String[] args) {
         System.out.println(""Hello"");
     }
 }
-// TODO implement",java_41
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-// initialize service",java_44
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service",java_45
+// TODO implement",java_28
 java,"public interface Service {
     void execute();
 }
-// TODO implement
-var message = 'ok';",java_47
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
+// TODO implement",java_35
+java,"public interface Service {
+    void execute();
 }
-// TODO implement
-let count = items.length;",java_48
+// initialize service",java_41
 java,"ArrayList<String> list = new ArrayList<>();
 list.add(""item"");
-// initialize service
-let count = items.length;",java_49
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-var message = 'ok';",java_50
-java,"public interface Service {
-    void execute();
-}
-const idx = 42;
-// TODO implement",java_51
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-const idx = 42;",java_52
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
 // initialize service",java_53
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_54
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-const idx = 42;",java_59
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const idx = 42;
-// check null",java_60
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);",java_62
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-var message = 'ok';",java_63
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-var message = 'ok';
-// initialize service",java_64
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-// check null",java_65
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-console.log('done');",java_67
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-// TODO implement",java_68
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);",java_70
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-const idx = 42;",java_71
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);",java_72
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-console.log('done');",java_76
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-var message = 'ok';",java_77
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);",java_81
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);",java_82
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_84
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-var message = 'ok';",java_85
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null",java_86
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null",java_89
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-console.log('done');
-// check null",java_90
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-let count = items.length;",java_96
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}",java_98
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);",java_102
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-// TODO implement",java_105
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-const idx = 42;",java_107
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);",java_109
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-const idx = 42;",java_110
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-// TODO implement",java_112
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-let count = items.length;",java_116
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-console.log('done');
-// initialize service",java_122
-java,"public interface Service {
-    void execute();
-}
-// check null
-var message = 'ok';",java_126
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-let count = items.length;
-// TODO implement",java_128
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-// TODO implement",java_129
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_131
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-var message = 'ok';
-// check null",java_134
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-let count = items.length;",java_135
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-// initialize service",java_136
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-var message = 'ok';",java_138
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-console.log('done');",java_139
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);",java_142
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-var message = 'ok';",java_143
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-var message = 'ok';
-// TODO implement",java_145
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);",java_146
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-// initialize service",java_147
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-console.log('done');
-// initialize service",java_149
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-// initialize service",java_151
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-var message = 'ok';
-// initialize service",java_155
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-var message = 'ok';
-// TODO implement",java_156
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-var message = 'ok';",java_161
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-// check null",java_162
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-// TODO implement",java_166
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-console.log('done');
-// check null",java_170
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-const idx = 42;",java_173
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-var message = 'ok';
-// initialize service",java_175
-java,"public interface Service {
-    void execute();
-}
-// check null
-const idx = 42;
-// TODO implement",java_177
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-var message = 'ok';
-// check null",java_182
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-let count = items.length;
-// check null",java_187
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-let count = items.length;
-// TODO implement",java_189
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-// initialize service",java_190
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const idx = 42;",java_195
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-let count = items.length;
-// initialize service",java_197
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-var message = 'ok';",java_198
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-let count = items.length;",java_209
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-// check null",java_211
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-let count = items.length;",java_221
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-console.log('done');",java_223
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-const result = values.reduce((acc, x) => acc + x, 0);",java_224
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_230
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-const idx = 42;",java_231
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-// TODO implement",java_234
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-// check null",java_236
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_237
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-// check null",java_238
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-const idx = 42;
-// check null",java_242
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-let count = items.length;",java_243
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-// TODO implement",java_244
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-console.log('done');
-// initialize service",java_245
-java,"public interface Service {
-    void execute();
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);",java_248
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-console.log('done');
-// initialize service",java_249
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-const idx = 42;",java_264
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-console.log('done');",java_266
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_268
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-// check null",java_270
-java,"public interface Service {
-    void execute();
-}
-// check null
-console.log('done');",java_275
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-console.log('done');
-// TODO implement",java_280
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-// initialize service",java_281
-java,"public interface Service {
-    void execute();
-}
-const idx = 42;",java_286
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-var message = 'ok';
-// TODO implement",java_292
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_293
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-let count = items.length;
-// check null",java_294
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-// check null",java_297
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-// initialize service",java_305
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-const idx = 42;",java_310
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-console.log('done');
-// initialize service",java_312
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_314
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-let count = items.length;",java_318
-java,"public interface Service {
-    void execute();
-}
-// check null
-let count = items.length;
-// TODO implement",java_326
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);",java_327
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-var message = 'ok';",java_328
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-// initialize service",java_331
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-// check null",java_333
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-console.log('done');
-// TODO implement",java_335
-java,"public interface Service {
-    void execute();
-}
-console.log('done');
-// initialize service",java_336
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-let count = items.length;",java_339
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-var message = 'ok';",java_340
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const idx = 42;",java_342
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-const idx = 42;",java_344
-java,"public interface Service {
-    void execute();
-}
-// check null
-const idx = 42;",java_348
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-var message = 'ok';
-// initialize service",java_351
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-// TODO implement",java_353
-java,"public interface Service {
-    void execute();
-}
-// check null
-var message = 'ok';
-// initialize service",java_361
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-let count = items.length;
-// initialize service",java_364
-java,"public interface Service {
-    void execute();
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_365
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-let count = items.length;
-// initialize service",java_366
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-let count = items.length;",java_375
-java,"public interface Service {
-    void execute();
-}
-console.log('done');",java_376
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-// check null",java_391
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-let count = items.length;
-// check null",java_393
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_394
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-console.log('done');",java_409
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-// TODO implement",java_411
-java,"public interface Service {
-    void execute();
-}
-var message = 'ok';",java_412
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-const idx = 42;
-// TODO implement",java_417
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-var message = 'ok';",java_419
-java,"public interface Service {
-    void execute();
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_422
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-// TODO implement",java_423
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-// check null",java_424
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-const idx = 42;
-// TODO implement",java_434
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-console.log('done');",java_436
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-const idx = 42;",java_438
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-console.log('done');
-// TODO implement",java_441
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_447
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-let count = items.length;",java_450
-java,"public interface Service {
-    void execute();
-}
-// check null
-console.log('done');
-// check null",java_455
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-console.log('done');",java_462
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-let count = items.length;",java_467
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-var message = 'ok';",java_468
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_479
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);",java_491
-java,"public interface Service {
-    void execute();
-}
-// check null
-let count = items.length;",java_494
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const idx = 42;
-// TODO implement",java_498
-java,"public interface Service {
-    void execute();
-}
-// check null
-// initialize service",java_499
-java,"public interface Service {
-    void execute();
-}
-var message = 'ok';
-// initialize service",java_502
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-var message = 'ok';
-// check null",java_507
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-console.log('done');
-// initialize service",java_513
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-// check null",java_517
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-console.log('done');",java_519
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-let count = items.length;
-// check null",java_522
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-var message = 'ok';
-// TODO implement",java_524
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-const idx = 42;
-// initialize service",java_525
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_529
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-var message = 'ok';",java_535
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-let count = items.length;
-// TODO implement",java_545
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-// initialize service",java_551
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-let count = items.length;
-// initialize service",java_553
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_557
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-const result = values.reduce((acc, x) => acc + x, 0);",java_567
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);",java_570
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_571
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-let count = items.length;",java_577
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_580
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const idx = 42;
-// initialize service",java_585
-java,"public interface Service {
-    void execute();
-}
-let count = items.length;",java_611
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_613
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_625
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-console.log('done');",java_627
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_636
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-let count = items.length;
-// initialize service",java_647
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_650
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-const idx = 42;",java_656
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-let count = items.length;",java_666
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-// TODO implement",java_667
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-// initialize service",java_673
-java,"public interface Service {
-    void execute();
-}
-const result = values.reduce((acc, x) => acc + x, 0);",java_676
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-var message = 'ok';
-// check null",java_677
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-const idx = 42;
-// TODO implement",java_687
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);",java_701
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-const idx = 42;
-// initialize service",java_706
-java,"public interface Service {
-    void execute();
-}
-let count = items.length;
-// TODO implement",java_710
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// initialize service
-console.log('done');
-// TODO implement",java_715
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-console.log('done');",java_716
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-// TODO implement",java_718
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-const idx = 42;",java_720
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_735
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// check null
-const result = values.reduce((acc, x) => acc + x, 0);",java_738
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-const idx = 42;
-// initialize service",java_739
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-const idx = 42;
-// check null",java_741
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-const idx = 42;
-// TODO implement",java_750
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);
-// initialize service",java_766
-java,"public interface Service {
-    void execute();
-}
-// check null
-var message = 'ok';
-// TODO implement",java_772
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-const idx = 42;
-// check null",java_790
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// check null",java_795
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-console.log('done');",java_804
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-const result = values.reduce((acc, x) => acc + x, 0);",java_807
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-var message = 'ok';
-// check null",java_821
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// check null
-const idx = 42;
-// initialize service",java_842
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-const idx = 42;
-// TODO implement",java_848
-java,"public interface Service {
-    void execute();
-}
-// initialize service
-const idx = 42;
-// check null",java_864
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// TODO implement
-// TODO implement",java_880
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// check null
-console.log('done');
-// TODO implement",java_881
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-let count = items.length;
-// check null",java_888
-java,"public interface Service {
-    void execute();
-}
-// TODO implement
-console.log('done');",java_890
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// initialize service
-var message = 'ok';
-// initialize service",java_892
-java,"public interface Service {
-    void execute();
-}
-// check null
-const idx = 42;
-// check null",java_895
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// initialize service
-console.log('done');
-// TODO implement",java_910
-java,"public interface Service {
-    void execute();
-}
-// check null
-// TODO implement",java_911
-java,"public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println(""Hello"");
-    }
-}
-// TODO implement
-let count = items.length;
-// check null",java_913
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// check null
-var message = 'ok';",java_922
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-let count = items.length;
-// TODO implement",java_935
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-let count = items.length;
-// check null",java_969
-java,"ArrayList<String> list = new ArrayList<>();
-list.add(""item"");
-// initialize service
-const idx = 42;
-// initialize service",java_987
-java,"public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
-    }
-}
-// TODO implement
-const result = values.reduce((acc, x) => acc + x, 0);
-// TODO implement",java_992
-java,"try {
-    int x = 10 / 0;
-} catch (Exception e) {
-    e.printStackTrace();
-}
-// TODO implement
-let count = items.length;
-// check null",java_998
 javascript,"async function fetchData() {
     const response = await fetch('/api/data');
     return response.json();
-}
-// fetch data",javascript_0
+}",javascript_0
 javascript,"class Calculator {
     add(a, b) {
         return a + b;
     }
-}
-// eslint-disable-next-line
-var message = 'ok';
+}",javascript_1
+javascript,"const obj = { name: 'John', age: 30 };
+const {name, age} = obj;
 // fetch data",javascript_2
+javascript,"const arr = [1, 2, 3];
+const doubled = arr.map(x => x * 2);",javascript_3
+javascript,"const obj = { name: 'John', age: 30 };
+const {name, age} = obj;",javascript_6
+javascript,"const obj = { name: 'John', age: 30 };
+const {name, age} = obj;
+// update state",javascript_7
 javascript,"class Calculator {
     add(a, b) {
         return a + b;
     }
 }
-// update state",javascript_3
+// fetch data",javascript_8
+javascript,"function hello() {
+    console.log('Hello, World!');
+    return true;
+}",javascript_11
 javascript,"const arr = [1, 2, 3];
 const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_4
+// update state",javascript_13
 javascript,"async function fetchData() {
     const response = await fetch('/api/data');
     return response.json();
 }
-// eslint-disable-next-line
-let count = items.length;",javascript_5
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-var message = 'ok';",javascript_6
+// fetch data",javascript_18
 javascript,"function hello() {
     console.log('Hello, World!');
     return true;
 }
-var message = 'ok';
-// eslint-disable-next-line",javascript_7
+// update state",javascript_19
 javascript,"function hello() {
     console.log('Hello, World!');
     return true;
 }
-// eslint-disable-next-line
-console.log('done');",javascript_8
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-var message = 'ok';",javascript_9
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state",javascript_10
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-console.log('done');",javascript_11
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_12
+// fetch data",javascript_23
 javascript,"class Calculator {
     add(a, b) {
         return a + b;
     }
 }
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_13
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-// eslint-disable-next-line",javascript_14
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data",javascript_15
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-console.log('done');",javascript_17
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}",javascript_18
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-// fetch data",javascript_19
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data",javascript_20
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line",javascript_21
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-var message = 'ok';
-// update state",javascript_22
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);",javascript_24
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-let count = items.length;
-// eslint-disable-next-line",javascript_25
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_26
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-// update state",javascript_27
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-var message = 'ok';
-// eslint-disable-next-line",javascript_28
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-let count = items.length;",javascript_29
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-var message = 'ok';",javascript_31
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state",javascript_32
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-// fetch data",javascript_33
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line",javascript_35
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-const idx = 42;
-// update state",javascript_37
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-let count = items.length;",javascript_38
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}",javascript_39
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;",javascript_40
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-let count = items.length;
-// update state",javascript_41
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data",javascript_42
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-let count = items.length;",javascript_43
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-// update state",javascript_44
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const idx = 42;
-// fetch data",javascript_45
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-console.log('done');",javascript_47
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-let count = items.length;",javascript_48
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_50
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}",javascript_53
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-// eslint-disable-next-line",javascript_55
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_59
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_61
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-console.log('done');
-// eslint-disable-next-line",javascript_62
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const idx = 42;
-// eslint-disable-next-line",javascript_63
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-let count = items.length;
-// update state",javascript_65
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
 // update state",javascript_66
 javascript,"async function fetchData() {
     const response = await fetch('/api/data');
     return response.json();
 }
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_68
+// update state",javascript_67
 javascript,"const arr = [1, 2, 3];
 const doubled = arr.map(x => x * 2);
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_72
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-var message = 'ok';
-// fetch data",javascript_73
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const idx = 42;",javascript_75
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_76
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
+// fetch data",javascript_68
+typescript,"const arr: number[] = [1, 2, 3];
+const doubled = arr.map((x: number) => x * 2);",typescript_0
+typescript,"function greet(name: string): string {
+    return `Hello, ${name}`;
 }
-var message = 'ok';",javascript_77
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-const idx = 42;
-// eslint-disable-next-line",javascript_78
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-// eslint-disable-next-line",javascript_80
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-var message = 'ok';
-// fetch data",javascript_82
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-console.log('done');
-// eslint-disable-next-line",javascript_84
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-console.log('done');",javascript_85
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state",javascript_88
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line",javascript_92
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const idx = 42;",javascript_94
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-// eslint-disable-next-line",javascript_95
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-// update state",javascript_98
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-var message = 'ok';
-// eslint-disable-next-line",javascript_100
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-let count = items.length;",javascript_101
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state",javascript_104
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-let count = items.length;",javascript_108
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_110
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-console.log('done');",javascript_112
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_113
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_115
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data",javascript_117
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-const idx = 42;",javascript_120
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_121
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-const idx = 42;",javascript_123
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-console.log('done');
-// fetch data",javascript_124
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-let count = items.length;",javascript_127
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-let count = items.length;",javascript_130
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-var message = 'ok';
-// fetch data",javascript_133
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-let count = items.length;",javascript_136
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-var message = 'ok';",javascript_138
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-const idx = 42;",javascript_140
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-var message = 'ok';",javascript_142
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-const idx = 42;",javascript_145
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-var message = 'ok';
-// update state",javascript_147
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const idx = 42;
-// fetch data",javascript_152
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-// eslint-disable-next-line",javascript_153
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-// update state",javascript_154
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-// eslint-disable-next-line",javascript_157
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-// eslint-disable-next-line",javascript_161
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-let count = items.length;
-// fetch data",javascript_163
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-console.log('done');
-// eslint-disable-next-line",javascript_167
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-var message = 'ok';",javascript_173
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-console.log('done');
-// update state",javascript_175
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line",javascript_176
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-var message = 'ok';",javascript_178
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-// fetch data",javascript_179
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-let count = items.length;",javascript_180
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-var message = 'ok';",javascript_182
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// update state",javascript_185
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-const idx = 42;",javascript_187
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-let count = items.length;",javascript_198
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-console.log('done');
-// eslint-disable-next-line",javascript_200
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-const idx = 42;",javascript_201
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-// eslint-disable-next-line",javascript_204
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-console.log('done');",javascript_206
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-const idx = 42;
-// eslint-disable-next-line",javascript_209
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-const idx = 42;",javascript_210
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-let count = items.length;
-// eslint-disable-next-line",javascript_213
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-let count = items.length;",javascript_214
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-var message = 'ok';",javascript_223
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-const idx = 42;
-// fetch data",javascript_230
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-// update state",javascript_241
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_249
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-const idx = 42;",javascript_259
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-console.log('done');
-// eslint-disable-next-line",javascript_266
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-// update state",javascript_267
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-const idx = 42;",javascript_268
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-const idx = 42;",javascript_269
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-// eslint-disable-next-line",javascript_273
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-// fetch data",javascript_274
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-// eslint-disable-next-line",javascript_275
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-const idx = 42;",javascript_283
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-// update state",javascript_284
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_285
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-// update state",javascript_301
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-const idx = 42;
-// fetch data",javascript_304
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-console.log('done');",javascript_306
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-// fetch data",javascript_311
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-console.log('done');",javascript_319
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-var message = 'ok';",javascript_323
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-let count = items.length;",javascript_326
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_328
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-// eslint-disable-next-line",javascript_329
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-// eslint-disable-next-line",javascript_338
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-console.log('done');",javascript_348
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_349
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-// fetch data",javascript_352
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-var message = 'ok';",javascript_354
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-const idx = 42;
-// update state",javascript_355
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line",javascript_357
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-// update state",javascript_358
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-let count = items.length;
-// eslint-disable-next-line",javascript_361
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-const idx = 42;",javascript_367
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-console.log('done');",javascript_372
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-let count = items.length;
-// update state",javascript_376
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-let count = items.length;
-// update state",javascript_384
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-var message = 'ok';
-// update state",javascript_390
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-let count = items.length;",javascript_394
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-let count = items.length;",javascript_396
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-console.log('done');
-// update state",javascript_399
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-var message = 'ok';
-// update state",javascript_405
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-console.log('done');
-// update state",javascript_406
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-const idx = 42;
-// update state",javascript_407
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-var message = 'ok';
-// eslint-disable-next-line",javascript_413
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-var message = 'ok';",javascript_418
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-// eslint-disable-next-line",javascript_420
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-console.log('done');
-// update state",javascript_427
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-var message = 'ok';",javascript_430
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-var message = 'ok';
-// update state",javascript_431
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-var message = 'ok';
-// eslint-disable-next-line",javascript_432
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_439
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-const idx = 42;
-// eslint-disable-next-line",javascript_442
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-var message = 'ok';
-// eslint-disable-next-line",javascript_455
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-// fetch data",javascript_460
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-var message = 'ok';",javascript_462
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-console.log('done');
-// eslint-disable-next-line",javascript_464
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-const idx = 42;
-// update state",javascript_468
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_472
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_473
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-// fetch data",javascript_478
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-// update state",javascript_483
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_499
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-console.log('done');",javascript_503
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-const idx = 42;",javascript_508
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-console.log('done');",javascript_513
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const idx = 42;
-// update state",javascript_514
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-// fetch data",javascript_516
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-let count = items.length;
-// update state",javascript_521
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-var message = 'ok';
-// update state",javascript_525
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-let count = items.length;",javascript_536
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-console.log('done');
-// fetch data",javascript_537
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-console.log('done');",javascript_555
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-let count = items.length;
-// update state",javascript_558
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_570
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-const idx = 42;",javascript_573
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-let count = items.length;",javascript_578
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-var message = 'ok';
-// fetch data",javascript_579
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-var message = 'ok';",javascript_587
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-var message = 'ok';
-// eslint-disable-next-line",javascript_591
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-console.log('done');",javascript_596
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_626
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_628
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_632
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-var message = 'ok';
-// update state",javascript_633
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-const idx = 42;
-// fetch data",javascript_636
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-// eslint-disable-next-line",javascript_639
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-const idx = 42;",javascript_640
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-let count = items.length;
-// fetch data",javascript_644
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-let count = items.length;
-// update state",javascript_651
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-console.log('done');",javascript_662
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_671
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-// fetch data",javascript_676
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_684
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);
-// update state",javascript_685
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-let count = items.length;
-// eslint-disable-next-line",javascript_695
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// fetch data
-console.log('done');
-// update state",javascript_722
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// fetch data
-const idx = 42;",javascript_725
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-const idx = 42;
-// eslint-disable-next-line",javascript_732
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-let count = items.length;
-// update state",javascript_743
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-let count = items.length;
-// eslint-disable-next-line",javascript_745
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// fetch data
-console.log('done');
-// fetch data",javascript_752
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_755
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-// update state",javascript_766
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-console.log('done');
-// update state",javascript_767
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-var message = 'ok';
-// update state",javascript_772
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-console.log('done');
-// update state",javascript_776
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-console.log('done');
-// update state",javascript_778
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-// update state",javascript_780
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// eslint-disable-next-line
-// eslint-disable-next-line",javascript_785
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-// fetch data",javascript_788
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-const idx = 42;
-// update state",javascript_807
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-// update state",javascript_816
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// update state
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_821
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// eslint-disable-next-line
-var message = 'ok';",javascript_827
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-console.log('done');",javascript_828
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-// update state
-console.log('done');
-// fetch data",javascript_832
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-const idx = 42;
-// eslint-disable-next-line",javascript_835
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-console.log('done');
-// fetch data",javascript_837
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-const idx = 42;
-// fetch data",javascript_839
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// update state
-var message = 'ok';
-// update state",javascript_841
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-let count = items.length;
-// fetch data",javascript_844
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-var message = 'ok';
-// update state",javascript_847
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_860
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// eslint-disable-next-line
-console.log('done');
-// eslint-disable-next-line",javascript_876
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-// update state
-console.log('done');",javascript_888
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-const result = values.reduce((acc, x) => acc + x, 0);
-// fetch data",javascript_890
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-console.log('done');
-// fetch data",javascript_891
-javascript,"class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-// eslint-disable-next-line
-const idx = 42;
-// eslint-disable-next-line",javascript_911
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// update state
-console.log('done');
-// eslint-disable-next-line",javascript_916
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-// fetch data
-const result = values.reduce((acc, x) => acc + x, 0);",javascript_918
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// fetch data
-var message = 'ok';",javascript_932
-javascript,"const arr = [1, 2, 3];
-const doubled = arr.map(x => x * 2);
-const result = values.reduce((acc, x) => acc + x, 0);
-// eslint-disable-next-line",javascript_936
-javascript,"const obj = { name: 'John', age: 30 };
-const {name, age} = obj;
-const idx = 42;
-// fetch data",javascript_947
-javascript,"function hello() {
-    console.log('Hello, World!');
-    return true;
-}
-console.log('done');
-// fetch data",javascript_957
-javascript,"async function fetchData() {
-    const response = await fetch('/api/data');
-    return response.json();
-}
-// eslint-disable-next-line
-console.log('done');
-// update state",javascript_971
-typescript,"# typescript code example
-print('typescript')",typescript_0
-typescript,"# typescript code example
-print('typescript')
 # sample code",typescript_1
-typescript,"# typescript code example
-print('typescript')
-# sample code
+typescript,"const arr: number[] = [1, 2, 3];
+const doubled = arr.map((x: number) => x * 2);
 # sample code",typescript_2
-typescript,"# typescript code example
-print('typescript')
-const idx = 42;",typescript_3
-typescript,"# typescript code example
-print('typescript')
-console.log('done');
-# sample code",typescript_4
-typescript,"# typescript code example
-print('typescript')
-# sample code
-let count = items.length;",typescript_11
-typescript,"# typescript code example
-print('typescript')
-# sample code
-console.log('done');",typescript_12
-typescript,"# typescript code example
-print('typescript')
-# sample code
-var message = 'ok';",typescript_13
-typescript,"# typescript code example
-print('typescript')
-let count = items.length;",typescript_24
-typescript,"# typescript code example
-print('typescript')
-# sample code
-const idx = 42;",typescript_26
-typescript,"# typescript code example
-print('typescript')
-var message = 'ok';",typescript_28
-typescript,"# typescript code example
-print('typescript')
-# sample code
-var message = 'ok';
-# sample code",typescript_29
-typescript,"# typescript code example
-print('typescript')
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);",typescript_42
-typescript,"# typescript code example
-print('typescript')
-console.log('done');",typescript_44
-typescript,"# typescript code example
-print('typescript')
-# sample code
-console.log('done');
-# sample code",typescript_53
-typescript,"# typescript code example
-print('typescript')
-const idx = 42;
-# sample code",typescript_67
-typescript,"# typescript code example
-print('typescript')
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",typescript_68
-typescript,"# typescript code example
-print('typescript')
-var message = 'ok';
-# sample code",typescript_76
-typescript,"# typescript code example
-print('typescript')
-# sample code
-const idx = 42;
-# sample code",typescript_83
-typescript,"# typescript code example
-print('typescript')
-# sample code
-let count = items.length;
-# sample code",typescript_92
-typescript,"# typescript code example
-print('typescript')
-let count = items.length;
-# sample code",typescript_104
-typescript,"# typescript code example
-print('typescript')
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",typescript_215
-typescript,"# typescript code example
-print('typescript')
-const result = values.reduce((acc, x) => acc + x, 0);",typescript_220
-csharp,"# csharp code example
-print('csharp')",csharp_0
-csharp,"# csharp code example
-print('csharp')
+typescript,"interface User {
+    id: number;
+    name: string;
+}
+# sample code",typescript_7
+typescript,"function greet(name: string): string {
+    return `Hello, ${name}`;
+}",typescript_11
+typescript,"interface User {
+    id: number;
+    name: string;
+}",typescript_13
+csharp,"public class Calculator {
+    public int Add(int a, int b) => a + b;
+}",csharp_0
+csharp,"using System;
+namespace Demo {
+    class Program {
+        static void Main() {
+            Console.WriteLine(""Hello"");
+        }
+    }
+}
 # sample code",csharp_1
-csharp,"# csharp code example
-print('csharp')
-# sample code
-# sample code",csharp_3
-csharp,"# csharp code example
-print('csharp')
-
-# sample code",csharp_20
-csharp,"# csharp code example
-print('csharp')
-# sample code
-
-# sample code",csharp_81
-cpp,"# cpp code example
-print('cpp')",cpp_0
-cpp,"# cpp code example
-print('cpp')
-# sample code",cpp_1
-cpp,"# cpp code example
-print('cpp')
-# sample code
-
+csharp,"using System;
+namespace Demo {
+    class Program {
+        static void Main() {
+            Console.WriteLine(""Hello"");
+        }
+    }
+}",csharp_2
+csharp,"public class Calculator {
+    public int Add(int a, int b) => a + b;
+}
+# sample code",csharp_9
+cpp,"#include <iostream>
+using namespace std;
+int main() {
+    cout << ""Hello"" << endl;
+    return 0;
+}",cpp_0
+cpp,"#include <iostream>
+using namespace std;
+int main() {
+    cout << ""Hello"" << endl;
+    return 0;
+}
 # sample code",cpp_2
-cpp,"# cpp code example
-print('cpp')
-# sample code
-# sample code",cpp_19
-cpp,"# cpp code example
-print('cpp')
-
-# sample code",cpp_103
-c,"# c code example
-print('c')
+cpp,"#include <vector>
+vector<int> v = {1, 2, 3};
+for(int x : v) cout << x;",cpp_3
+cpp,"#include <vector>
+vector<int> v = {1, 2, 3};
+for(int x : v) cout << x;
+# sample code",cpp_6
+c,"#include <stdio.h>
+int main(void) {
+    printf(""Hello\n"");
+    return 0;
+}
 # sample code",c_0
-c,"# c code example
-print('c')
-# sample code
-
-# sample code",c_1
-c,"# c code example
-print('c')
-
+c,"#include <stdio.h>
+int main(void) {
+    printf(""Hello\n"");
+    return 0;
+}",c_1
+c,"#include <stdlib.h>
+int* arr = malloc(10 * sizeof(int));
+free(arr);
 # sample code",c_2
-c,"# c code example
-print('c')",c_3
-c,"# c code example
-print('c')
-# sample code
-# sample code",c_18
-ruby,"# ruby code example
-print('ruby')",ruby_0
-ruby,"# ruby code example
-print('ruby')
-# sample code",ruby_1
-ruby,"# ruby code example
-print('ruby')
-# sample code
-
+c,"#include <stdlib.h>
+int* arr = malloc(10 * sizeof(int));
+free(arr);",c_4
+ruby,"def greet(name)
+  puts ""Hello, #{name}""
+end
+greet('World')",ruby_0
+ruby,"class Calculator
+  def add(a, b)
+    a + b
+  end
+end",ruby_3
+ruby,"def greet(name)
+  puts ""Hello, #{name}""
+end
+greet('World')
 # sample code",ruby_4
-ruby,"# ruby code example
-print('ruby')
-# sample code
-# sample code",ruby_8
-ruby,"# ruby code example
-print('ruby')
-
-# sample code",ruby_21
-php,"# php code example
-print('php')
-# sample code
-
+ruby,"class Calculator
+  def add(a, b)
+    a + b
+  end
+end
+# sample code",ruby_5
+php,"<?php
+class Calculator {
+    public function add($a, $b) {
+        return $a + $b;
+    }
+}
+?>
 # sample code",php_0
-php,"# php code example
-print('php')
-
-# sample code",php_1
-php,"# php code example
-print('php')
-# sample code",php_2
-php,"# php code example
-print('php')",php_7
-php,"# php code example
-print('php')
-# sample code
-# sample code",php_18
-go,"# go code example
-print('go')
-# sample code",go_0
-go,"# go code example
-print('go')",go_1
-go,"# go code example
-print('go')
-# sample code
-# sample code",go_2
-go,"# go code example
-print('go')
-# sample code
-
-# sample code",go_4
-go,"# go code example
-print('go')
-
-# sample code",go_32
-rust,"# rust code example
-print('rust')",rust_0
-rust,"# rust code example
-print('rust')
+php,"<?php
+class Calculator {
+    public function add($a, $b) {
+        return $a + $b;
+    }
+}
+?>",php_2
+php,"<?php
+function greet($name) {
+    echo ""Hello, $name"";
+}
+greet('World');
+?>
+# sample code",php_4
+php,"<?php
+function greet($name) {
+    echo ""Hello, $name"";
+}
+greet('World');
+?>",php_9
+go,"package main
+import ""fmt""
+func main() {
+    fmt.Println(""Hello"")
+}",go_0
+go,"func add(a, b int) int {
+    return a + b
+}
+# sample code",go_1
+go,"func add(a, b int) int {
+    return a + b
+}",go_2
+go,"package main
+import ""fmt""
+func main() {
+    fmt.Println(""Hello"")
+}
+# sample code",go_9
+rust,"fn main() {
+    let x: i32 = 10;
+    println!(""{}"", x);
+}",rust_0
+rust,"fn main() {
+    let x: i32 = 10;
+    println!(""{}"", x);
+}
 # sample code",rust_1
-rust,"# rust code example
-print('rust')
-
-# sample code",rust_7
-rust,"# rust code example
-print('rust')
-# sample code
-# sample code",rust_9
-rust,"# rust code example
-print('rust')
-# sample code
-
-# sample code",rust_15
-kotlin,"# kotlin code example
-print('kotlin')",kotlin_0
-kotlin,"# kotlin code example
-print('kotlin')
-# sample code",kotlin_1
-kotlin,"# kotlin code example
-print('kotlin')
-# sample code
-# sample code",kotlin_10
-kotlin,"# kotlin code example
-print('kotlin')
-
-# sample code",kotlin_11
-kotlin,"# kotlin code example
-print('kotlin')
-# sample code
-
-# sample code",kotlin_31
-swift,"# swift code example
-print('swift')
-# sample code",swift_0
-swift,"# swift code example
-print('swift')",swift_1
-swift,"# swift code example
-print('swift')
-# sample code
-# sample code",swift_12
-swift,"# swift code example
-print('swift')
-
-# sample code",swift_16
-swift,"# swift code example
-print('swift')
-# sample code
-
-# sample code",swift_18
-scala,"# scala code example
-print('scala')
-# sample code
-
+rust,"fn add(a: i32, b: i32) -> i32 {
+    a + b
+}",rust_2
+rust,"fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+# sample code",rust_11
+kotlin,"data class User(val name: String, val age: Int)
+# sample code",kotlin_0
+kotlin,"fun main() {
+    val x = 10
+    println(""Hello $x"")
+}",kotlin_4
+kotlin,"fun main() {
+    val x = 10
+    println(""Hello $x"")
+}
+# sample code",kotlin_6
+kotlin,"data class User(val name: String, val age: Int)",kotlin_8
+swift,"struct Calculator {
+    func add(_ a: Int, _ b: Int) -> Int { a + b }
+}",swift_0
+swift,"func greet(name: String) {
+    print(""Hello \(name)"")
+}
+# sample code",swift_1
+swift,"struct Calculator {
+    func add(_ a: Int, _ b: Int) -> Int { a + b }
+}
+# sample code",swift_4
+swift,"func greet(name: String) {
+    print(""Hello \(name)"")
+}",swift_5
+scala,"object Main {
+  def main(args: Array[String]): Unit = {
+    println(""Hello"")
+  }
+}
 # sample code",scala_0
-scala,"# scala code example
-print('scala')
+scala,"case class User(name: String, age: Int)
 # sample code",scala_1
-scala,"# scala code example
-print('scala')
-
-# sample code",scala_2
-scala,"# scala code example
-print('scala')
-# sample code
-# sample code",scala_3
-scala,"# scala code example
-print('scala')",scala_4
-haskell,"# haskell code example
-print('haskell')
-
+scala,"case class User(name: String, age: Int)",scala_8
+scala,"object Main {
+  def main(args: Array[String]): Unit = {
+    println(""Hello"")
+  }
+}",scala_9
+haskell,"module Main where
+main :: IO ()
+main = putStrLn ""Hello""
 # sample code",haskell_0
-haskell,"# haskell code example
-print('haskell')
-# sample code",haskell_1
-haskell,"# haskell code example
-print('haskell')",haskell_3
-haskell,"# haskell code example
-print('haskell')
-# sample code
-# sample code",haskell_20
-haskell,"# haskell code example
-print('haskell')
-# sample code
-
-# sample code",haskell_28
-r,"# r code example
-print('r')
-# sample code
+haskell,"module Main where
+main :: IO ()
+main = putStrLn ""Hello""",haskell_1
+haskell,"add :: Int -> Int -> Int
+add x y = x + y
+# sample code",haskell_2
+haskell,"add :: Int -> Int -> Int
+add x y = x + y",haskell_7
+r,"library(ggplot2)
+df <- data.frame(x=1:5, y=1:5)
+ggplot(df, aes(x,y)) + geom_point()
 # sample code",r_0
-r,"# r code example
-print('r')
-# sample code",r_1
-r,"# r code example
-print('r')
-# sample code
-
-# sample code",r_3
-r,"# r code example
-print('r')",r_5
-r,"# r code example
-print('r')
-
-# sample code",r_41
-perl,"# perl code example
-print('perl')
-# sample code",perl_0
-perl,"# perl code example
-print('perl')
-# sample code
-# sample code",perl_4
-perl,"# perl code example
-print('perl')",perl_5
-perl,"# perl code example
-print('perl')
-# sample code
-
-# sample code",perl_12
-perl,"# perl code example
-print('perl')
-
-# sample code",perl_25
-lua,"# lua code example
-print('lua')
-# sample code",lua_0
-lua,"# lua code example
-print('lua')
-# sample code
+r,"library(ggplot2)
+df <- data.frame(x=1:5, y=1:5)
+ggplot(df, aes(x,y)) + geom_point()",r_1
+r,"greet <- function(name) {
+  cat(""Hello"", name)
+}
+x <- c(1, 2, 3)",r_2
+r,"greet <- function(name) {
+  cat(""Hello"", name)
+}
+x <- c(1, 2, 3)
+# sample code",r_4
+perl,"#!/usr/bin/perl
+use strict;
+my $x = 10;
+print ""Hello $x\n"";",perl_0
+perl,"sub greet {
+    my $name = shift;
+    print ""Hello, $name\n"";
+}",perl_1
+perl,"sub greet {
+    my $name = shift;
+    print ""Hello, $name\n"";
+}
+# sample code",perl_3
+perl,"#!/usr/bin/perl
+use strict;
+my $x = 10;
+print ""Hello $x\n"";
+# sample code",perl_17
+lua,"local function greet(name)
+  print(""Hello "" .. name)
+end
+greet(""World"")",lua_0
+lua,"local function greet(name)
+  print(""Hello "" .. name)
+end
+greet(""World"")
 # sample code",lua_1
-lua,"# lua code example
-print('lua')",lua_10
-lua,"# lua code example
-print('lua')
-# sample code
-
-# sample code",lua_17
-lua,"# lua code example
-print('lua')
-
-# sample code",lua_64
-shell,"# shell code example
-print('shell')
-# sample code",shell_0
-shell,"# shell code example
-print('shell')",shell_3
-shell,"# shell code example
-print('shell')
-# sample code
-
+lua,"for i = 1, 10 do
+  if i % 2 == 0 then print(i) end
+end",lua_5
+lua,"for i = 1, 10 do
+  if i % 2 == 0 then print(i) end
+end
+# sample code",lua_6
+shell,"#!/bin/sh
+if [ -f ""/tmp/data.csv"" ]; then
+  cat /tmp/data.csv
+fi",shell_0
+shell,"#!/bin/bash
+for file in *.txt; do
+  echo ""Processing $file""
+done",shell_1
+shell,"#!/bin/sh
+if [ -f ""/tmp/data.csv"" ]; then
+  cat /tmp/data.csv
+fi
+# sample code",shell_2
+shell,"#!/bin/bash
+for file in *.txt; do
+  echo ""Processing $file""
+done
 # sample code",shell_4
-shell,"# shell code example
-print('shell')
-# sample code
-# sample code",shell_10
-shell,"# shell code example
-print('shell')
-
-# sample code",shell_50
-sql,"SELECT * FROM users WHERE age > 18;
--- create table",sql_0
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
-
--- select rows",sql_2
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
--- drop temp table",sql_3
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table",sql_4
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
-
+sql,"INSERT INTO users (name, email)
+VALUES ('John', 'john@example.com');",sql_0
+sql,"SELECT id, name FROM users
+WHERE age > 18
+-- filter by age
+ORDER BY name;
+-- create table",sql_2
+sql,"SELECT id, name FROM users
+WHERE age > 18
+-- filter by age
+ORDER BY name;
 -- select rows",sql_5
-sql,UPDATE products SET price = 99.99 WHERE id = 1;,sql_7
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
-
--- select rows",sql_8
-sql,"SELECT * FROM users WHERE age > 18;
-
--- drop temp table",sql_9
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows",sql_10
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
-
--- drop temp table",sql_11
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows",sql_12
-sql,SELECT * FROM users WHERE age > 18;,sql_13
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
--- create table",sql_19
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows",sql_20
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
--- drop temp table",sql_22
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table",sql_23
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table",sql_27
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table",sql_28
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
--- create table",sql_29
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
-
--- select rows",sql_30
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');",sql_35
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
--- drop temp table",sql_44
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
-
--- create table",sql_54
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
-
--- drop temp table",sql_56
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
-
--- create table",sql_57
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
--- drop temp table",sql_59
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table",sql_61
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
-
--- create table",sql_70
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
--- select rows",sql_78
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
--- drop temp table",sql_81
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
--- select rows",sql_82
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
-
--- select rows",sql_84
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
--- select rows",sql_98
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
-
--- drop temp table",sql_100
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
--- create table",sql_103
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
-
--- drop temp table",sql_110
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
--- create table",sql_112
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
-
--- create table",sql_142
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
--- select rows",sql_152
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
-
--- drop temp table",sql_153
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
--- select rows",sql_154
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
--- create table",sql_159
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
-
--- select rows",sql_193
-sql,"SELECT * FROM users WHERE age > 18;
-
--- select rows",sql_203
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- drop temp table
--- create table",sql_217
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
-
--- select rows",sql_220
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
-
--- drop temp table",sql_227
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
-
--- create table",sql_236
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
-
--- select rows",sql_264
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
--- select rows",sql_296
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
-
--- select rows",sql_328
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
-
--- drop temp table",sql_334
-sql,"SELECT * FROM users WHERE age > 18;
-
--- create table",sql_341
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
-
--- drop temp table",sql_343
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
-
--- create table",sql_359
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
--- drop temp table",sql_401
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
-
--- drop temp table",sql_403
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
-
--- create table",sql_407
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
--- drop temp table",sql_409
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- create table
--- create table",sql_422
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- select rows
--- select rows",sql_442
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
--- select rows",sql_463
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- drop temp table
-
--- create table",sql_468
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
-
--- create table",sql_473
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
--- drop temp table",sql_571
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
--- create table",sql_603
-sql,"SELECT * FROM users WHERE age > 18;
--- create table
-
--- select rows",sql_666
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
-
--- select rows",sql_678
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
-
--- drop temp table",sql_698
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
-
--- drop temp table",sql_763
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
--- create table",sql_765
-sql,"UPDATE products SET price = 99.99 WHERE id = 1;
--- create table
--- drop temp table",sql_769
-sql,"SELECT * FROM users WHERE age > 18;
--- drop temp table
-
--- create table",sql_775
-sql,"INSERT INTO users (name, email) VALUES ('John', 'john@example.com');
--- select rows
-
--- create table",sql_790
-sql,"SELECT * FROM users WHERE age > 18;
--- select rows
--- select rows",sql_837
+sql,"INSERT INTO users (name, email)
+VALUES ('John', 'john@example.com');
+-- select rows",sql_9
+sql,"SELECT id, name FROM users
+WHERE age > 18
+-- filter by age
+ORDER BY name;",sql_17
+sql,"INSERT INTO users (name, email)
+VALUES ('John', 'john@example.com');
+-- create table",sql_36
 html,"<!DOCTYPE html>
 <html>
 <head><title>Page</title></head>
@@ -4738,39 +519,28 @@ html,"<!DOCTYPE html>
 <h1>Welcome</h1>
 </body>
 </html>
-<!-- main content -->
-<!-- footer -->",html_0
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>",html_1
+<!-- header -->",html_0
 html,"<!DOCTYPE html>
 <html>
 <head><title>Page</title></head>
 <body>
 <h1>Welcome</h1>
 </body>
-</html>",html_2
+</html>",html_1
 html,"<div class=""container"">
     <p>Content here</p>
+    <ul><li>Item 1</li></ul>
 </div>
-<!-- main content -->
 <!-- main content -->",html_3
 html,"<div class=""container"">
     <p>Content here</p>
+    <ul><li>Item 1</li></ul>
 </div>
-<!-- header -->",html_5
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->",html_6
+<!-- header -->",html_4
 html,"<div class=""container"">
     <p>Content here</p>
-</div>
-<!-- main content -->
-
-<!-- main content -->",html_11
+    <ul><li>Item 1</li></ul>
+</div>",html_7
 html,"<!DOCTYPE html>
 <html>
 <head><title>Page</title></head>
@@ -4778,449 +548,15 @@ html,"<!DOCTYPE html>
 <h1>Welcome</h1>
 </body>
 </html>
-<!-- main content -->",html_12
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- main content -->",html_13
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-
-<!-- footer -->",html_14
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->",html_15
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->
-<!-- main content -->",html_16
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->",html_23
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->",html_25
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-
-<!-- main content -->",html_26
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->",html_28
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>",html_29
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->
-<!-- header -->",html_31
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-
-<!-- footer -->",html_32
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->",html_35
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-<!-- footer -->",html_42
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- main content -->
-<!-- main content -->",html_46
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- main content -->
-<!-- header -->",html_50
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-
-<!-- footer -->",html_51
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-
-<!-- main content -->",html_55
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-<!-- main content -->",html_77
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->
-<!-- footer -->",html_79
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-
-<!-- header -->",html_89
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-
-<!-- footer -->",html_92
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-
-<!-- main content -->",html_105
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-<!-- footer -->",html_109
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-
-<!-- header -->",html_115
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-
-<!-- footer -->",html_141
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->
-
-<!-- header -->",html_147
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->
-<!-- header -->",html_159
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-
-<!-- main content -->",html_163
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->
-
-<!-- header -->",html_166
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-<!-- main content -->",html_168
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- main content -->
-
-<!-- header -->",html_179
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- main content -->
-<!-- footer -->",html_184
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->
-
-<!-- header -->",html_192
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-
-<!-- header -->",html_195
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- main content -->
-
-<!-- footer -->",html_202
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-
-<!-- main content -->",html_204
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-
-<!-- header -->",html_207
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-<!-- header -->",html_210
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->
-<!-- footer -->",html_213
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->
-
-<!-- main content -->",html_225
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->
-<!-- main content -->",html_229
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->
-<!-- header -->",html_231
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-
-<!-- header -->",html_241
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->
-<!-- main content -->",html_257
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-<!-- footer -->",html_262
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- main content -->
-
-<!-- footer -->",html_266
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-<!-- main content -->",html_306
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- main content -->
-
-<!-- header -->",html_328
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-
-<!-- main content -->",html_406
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- header -->
-
-<!-- footer -->",html_425
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- footer -->
-<!-- header -->",html_427
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- main content -->
-<!-- header -->",html_448
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-<!-- header -->",html_462
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- footer -->
-
-<!-- footer -->",html_474
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-<!-- footer -->",html_476
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-
-<!-- header -->",html_565
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-
-<!-- footer -->",html_623
-html,"<div class=""container"">
-    <p>Content here</p>
-</div>
-<!-- header -->
-<!-- main content -->",html_672
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-
-<!-- header -->",html_680
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- footer -->
-
-<!-- footer -->",html_684
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-
-<!-- footer -->",html_710
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- header -->
-
-<!-- main content -->",html_722
-html,"<?xml version=""1.0""?>
-<root>
-    <item>Value</item>
-</root>
-<!-- main content -->
-<!-- header -->",html_759
-html,"<!DOCTYPE html>
-<html>
-<head><title>Page</title></head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>
-<!-- main content -->
-
-<!-- main content -->",html_814
+<!-- main content -->",html_10
+css,"body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+a:hover {
+    text-decoration: underline;
+}",css_0
 css,".container {
     display: flex;
     justify-content: center;
@@ -5228,33 +564,7 @@ css,".container {
 .item {
     color: blue;
 }
-/* style wrapper */
-/* style wrapper */",css_0
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* style wrapper */
 /* responsive layout */",css_1
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* responsive layout */",css_2
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}",css_3
 css,".container {
     display: flex;
     justify-content: center;
@@ -5262,7 +572,7 @@ css,".container {
 .item {
     color: blue;
 }
-/* responsive layout */",css_4
+/* style wrapper */",css_2
 css,"body {
     margin: 0;
     padding: 0;
@@ -5271,225 +581,44 @@ css,"body {
 a:hover {
     text-decoration: underline;
 }
-/* style wrapper */
-
-/* responsive layout */",css_8
+/* style wrapper */",css_4
+css,"body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* responsive layout */",css_5
 css,".container {
     display: flex;
     justify-content: center;
 }
 .item {
     color: blue;
-}
-/* style wrapper */",css_9
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}",css_12
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* responsive layout */
-
-/* style wrapper */",css_14
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* style wrapper */",css_16
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* style wrapper */",css_17
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* style wrapper */
-/* style wrapper */",css_22
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* style wrapper */
-/* responsive layout */",css_24
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* responsive layout */
-
-/* responsive layout */",css_25
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-
-/* style wrapper */",css_33
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* style wrapper */
-
-/* style wrapper */",css_40
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* responsive layout */
-
-/* style wrapper */",css_41
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* responsive layout */
-/* style wrapper */",css_47
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* responsive layout */
-/* responsive layout */",css_55
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* style wrapper */
-
-/* responsive layout */",css_62
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-
-/* responsive layout */",css_70
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* style wrapper */
-
-/* style wrapper */",css_93
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* responsive layout */
-/* style wrapper */",css_111
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-/* responsive layout */
-
-/* responsive layout */",css_118
-css,".container {
-    display: flex;
-    justify-content: center;
-}
-.item {
-    color: blue;
-}
-/* responsive layout */
-/* responsive layout */",css_156
-css,"body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* responsive layout */",css_209
-xml,"# xml code example
-print('xml')
+}",css_10
+xml,"<config>
+    <server host=""localhost"" port=""8080""/>
+    <database name=""mydb""/>
+</config>
 # sample code",xml_0
-xml,"# xml code example
-print('xml')
-# sample code
-
-# sample code",xml_2
-xml,"# xml code example
-print('xml')
-# sample code
-# sample code",xml_5
-xml,"# xml code example
-print('xml')",xml_6
-xml,"# xml code example
-print('xml')
-
-# sample code",xml_11
+xml,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<root>
+    <item id=""1"">Value</item>
+</root>",xml_1
+xml,"<config>
+    <server host=""localhost"" port=""8080""/>
+    <database name=""mydb""/>
+</config>",xml_2
+xml,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<root>
+    <item id=""1"">Value</item>
+</root>
+# sample code",xml_6
 markdown,"# Title
 ## Subtitle
 This is **bold** and *italic* text.
-
 # sample code",markdown_0
 markdown,"- Item 1
 - Item 2
@@ -5497,27 +626,10 @@ markdown,"- Item 1
 
 ```python
 code block
-```
-# sample code",markdown_1
-markdown,"- Item 1
-- Item 2
-  - Nested item
-
-```python
-code block
-```",markdown_2
+```",markdown_1
 markdown,"# Title
 ## Subtitle
-This is **bold** and *italic* text.
-# sample code
-# sample code",markdown_3
-markdown,"# Title
-## Subtitle
-This is **bold** and *italic* text.",markdown_7
-markdown,"# Title
-## Subtitle
-This is **bold** and *italic* text.
-# sample code",markdown_10
+This is **bold** and *italic* text.",markdown_3
 markdown,"- Item 1
 - Item 2
   - Nested item
@@ -5525,1386 +637,299 @@ markdown,"- Item 1
 ```python
 code block
 ```
-
-# sample code",markdown_11
-markdown,"- Item 1
-- Item 2
-  - Nested item
-
-```python
-code block
-```
-# sample code
-# sample code",markdown_18
-markdown,"# Title
-## Subtitle
-This is **bold** and *italic* text.
-# sample code
-
-# sample code",markdown_19
-markdown,"- Item 1
-- Item 2
-  - Nested item
-
-```python
-code block
-```
-# sample code
-
-# sample code",markdown_55
-tex,"# tex code example
-print('tex')
-# sample code
-
+# sample code",markdown_5
+tex,"\section{Introduction}
+This paper discusses $\alpha$ and $\beta$.
+\begin{equation}
+E = mc^2
+\end{equation}
 # sample code",tex_0
-tex,"# tex code example
-print('tex')
-# sample code",tex_1
-tex,"# tex code example
-print('tex')
-# sample code
-# sample code",tex_4
-tex,"# tex code example
-print('tex')",tex_11
-tex,"# tex code example
-print('tex')
-
-# sample code",tex_54
-dockerfile,"FROM python:3.9
+tex,"\documentclass{article}
+\begin{document}
+% comment
+Hello $x^2$.
+\end{document}
+# sample code",tex_2
+tex,"\documentclass{article}
+\begin{document}
+% comment
+Hello $x^2$.
+\end{document}",tex_3
+tex,"\section{Introduction}
+This paper discusses $\alpha$ and $\beta$.
+\begin{equation}
+E = mc^2
+\end{equation}",tex_5
+dockerfile,"FROM ubuntu:22.04
+RUN apt-get update && apt-get install -y python3
+EXPOSE 8080
+# sample code",dockerfile_0
+dockerfile,"FROM python:3.11
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
-CMD [""python"", ""app.py""]",dockerfile_0
-dockerfile,"FROM ubuntu:20.04
+CMD [""python"", ""app.py""]",dockerfile_1
+dockerfile,"FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y python3
-# sample code",dockerfile_1
-dockerfile,"FROM python:3.9
+EXPOSE 8080",dockerfile_2
+dockerfile,"FROM python:3.11
 WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt
 CMD [""python"", ""app.py""]
-# sample code",dockerfile_2
-dockerfile,"FROM ubuntu:20.04
-RUN apt-get update && apt-get install -y python3",dockerfile_3
-dockerfile,"FROM python:3.9
-WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-CMD [""python"", ""app.py""]
-# sample code
-
-# sample code",dockerfile_8
-dockerfile,"FROM ubuntu:20.04
-RUN apt-get update && apt-get install -y python3
-# sample code
-# sample code",dockerfile_14
-dockerfile,"FROM python:3.9
-WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-CMD [""python"", ""app.py""]
-
-# sample code",dockerfile_21
-dockerfile,"FROM python:3.9
-WORKDIR /app
-COPY . .
-RUN pip install -r requirements.txt
-CMD [""python"", ""app.py""]
-# sample code
-# sample code",dockerfile_24
-dockerfile,"FROM ubuntu:20.04
-RUN apt-get update && apt-get install -y python3
-# sample code
-
-# sample code",dockerfile_31
-dockerfile,"FROM ubuntu:20.04
-RUN apt-get update && apt-get install -y python3
-
-# sample code",dockerfile_36
+# sample code",dockerfile_3
 makefile,".PHONY: build run
 build:
-	python setup.py build
+	gcc -o app main.c
 run:
-	python main.py
-# sample code",makefile_0
+	./app
+clean:
+	rm -f app",makefile_0
 makefile,".PHONY: build run
 build:
-	python setup.py build
+	gcc -o app main.c
 run:
-	python main.py
-# sample code
-# sample code",makefile_4
-makefile,".PHONY: build run
-build:
-	python setup.py build
-run:
-	python main.py",makefile_8
-makefile,".PHONY: build run
-build:
-	python setup.py build
-run:
-	python main.py
-
-# sample code",makefile_12
-makefile,".PHONY: build run
-build:
-	python setup.py build
-run:
-	python main.py
-# sample code
-
-# sample code",makefile_16
-julia,"# julia code example
-print('julia')
-# sample code
+	./app
+clean:
+	rm -f app
+# sample code",makefile_1
+julia,"struct Point
+    x::Float64
+    y::Float64
+end
 # sample code",julia_0
-julia,"# julia code example
-print('julia')
-# sample code",julia_2
-julia,"# julia code example
-print('julia')",julia_8
-julia,"# julia code example
-print('julia')
-
-# sample code",julia_17
-julia,"# julia code example
-print('julia')
-# sample code
-
-# sample code",julia_62
+julia,"struct Point
+    x::Float64
+    y::Float64
+end",julia_1
+julia,"function greet(name)
+    println(""Hello $name"")
+end
+x = [1, 2, 3]",julia_2
+julia,"function greet(name)
+    println(""Hello $name"")
+end
+x = [1, 2, 3]
+# sample code",julia_9
 bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-# use set -e",bash_0
+if [[ $# -eq 0 ]]; then
+  echo ""Usage: $0 <name>""
+  exit 1
+fi",bash_0
 bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done",bash_1
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
+if [[ $# -eq 0 ]]; then
+  echo ""Usage: $0 <name>""
+  exit 1
 fi
-# backup files",bash_2
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline",bash_3
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline
-# run pipeline",bash_4
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi",bash_5
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e",bash_7
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-# use set -e",bash_8
+# backup files",bash_1
 bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
+set -e
+for i in 1 2 3; do
+  echo ""Step $i""
+done",bash_2
+bash,"#!/bin/bash
+set -e
+for i in 1 2 3; do
+  echo ""Step $i""
 done
-# use set -e",bash_9
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
+# backup files",bash_3
+bash,"#!/bin/bash
+if [[ $# -eq 0 ]]; then
+  echo ""Usage: $0 <name>""
+  exit 1
 fi
-# run pipeline
-# use set -e",bash_11
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-
-# run pipeline",bash_13
+# run pipeline",bash_7
 bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
+set -e
+for i in 1 2 3; do
+  echo ""Step $i""
 done
-
-# use set -e",bash_14
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-
-# run pipeline",bash_18
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files",bash_23
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline",bash_24
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-
-# backup files",bash_29
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-# run pipeline",bash_31
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline
-# backup files",bash_35
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-# backup files",bash_38
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-# run pipeline",bash_42
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline
-
-# run pipeline",bash_48
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-
-# run pipeline",bash_52
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-
-# run pipeline",bash_60
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-
-# use set -e",bash_67
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-# backup files",bash_71
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-
-# backup files",bash_81
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-
-# backup files",bash_100
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-
-# use set -e",bash_106
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-
-# use set -e",bash_117
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-# use set -e",bash_125
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-
-# backup files",bash_127
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-
-# backup files",bash_133
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-# use set -e",bash_136
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-# backup files",bash_147
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline
-
-# use set -e",bash_156
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-# backup files",bash_158
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-
-# backup files",bash_164
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-
-# backup files",bash_165
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-# backup files",bash_170
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-
-# use set -e",bash_171
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-# use set -e",bash_173
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-
-# use set -e",bash_224
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# run pipeline
-
-# run pipeline",bash_278
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# use set -e
-
-# run pipeline",bash_304
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-
-# run pipeline",bash_386
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# run pipeline
-
-# backup files",bash_415
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# backup files
-# run pipeline",bash_498
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-
-# use set -e",bash_523
-bash,"#!/bin/bash
-for file in *.txt; do
-  echo ""Processing $file""
-done
-# backup files
-# run pipeline",bash_689
-bash,"if [ -f ""/tmp/data.csv"" ]; then
-  cat /tmp/data.csv
-fi
-# use set -e
-# run pipeline",bash_712
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-
-# list files",powershell_0
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status",powershell_1
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-
-# list files",powershell_2
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }",powershell_4
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files",powershell_5
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output",powershell_6
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files",powershell_9
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }",powershell_10
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output",powershell_13
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-# log output",powershell_20
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status",powershell_22
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-
-# check status",powershell_23
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-# check status",powershell_24
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-
-# check status",powershell_31
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-
-# list files",powershell_32
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-
-# check status",powershell_35
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-# list files",powershell_36
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-# check status",powershell_40
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-
-# log output",powershell_43
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-
-# check status",powershell_44
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-
-# check status",powershell_45
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-# list files",powershell_52
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-# list files",powershell_54
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-
-# log output",powershell_57
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-
-# check status",powershell_68
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-
-# list files",powershell_70
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-
-# log output",powershell_71
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-# list files",powershell_81
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-# list files",powershell_89
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-
-# list files",powershell_100
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-
-# check status",powershell_103
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-# check status",powershell_115
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-# log output",powershell_120
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-
-# list files",powershell_142
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-
-# log output",powershell_144
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-# log output",powershell_146
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-# check status",powershell_158
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-
-# log output",powershell_166
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# check status
-
-# list files",powershell_168
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-# log output",powershell_190
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-# log output",powershell_197
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-# check status",powershell_199
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-# check status",powershell_239
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# list files
-
-# log output",powershell_243
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-
-# log output",powershell_252
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# log output
-# log output",powershell_257
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# check status
-# list files",powershell_268
-powershell,"Write-Host ""Hello World""
-Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
-# list files
-
-# check status",powershell_276
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-# log output
-
-# list files",powershell_353
-powershell,"$data = Import-Csv 'file.csv'
-$data | ForEach-Object { $_.Name }
-
-# log output",powershell_727
+# run pipeline",bash_9
+powershell,"Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
+# check status",powershell_0
+powershell,Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' },powershell_1
+powershell,"$name = ""World""
+function Greet { param($n) Write-Host ""Hello $n"" }
+Greet $name
+# list files",powershell_3
+powershell,"$name = ""World""
+function Greet { param($n) Write-Host ""Hello $n"" }
+Greet $name
+# check status",powershell_4
+powershell,"$name = ""World""
+function Greet { param($n) Write-Host ""Hello $n"" }
+Greet $name",powershell_7
+powershell,"Get-ChildItem -Path . | Where-Object { $_.Extension -eq '.txt' }
+# list files",powershell_20
 dart,"void main() {
-  print('Hello, Dart');
-}
-
-# sample code",dart_0
+  var x = 10;
+  print('Hello $x');
+}",dart_0
 dart,"void main() {
-  print('Hello, Dart');
+  var x = 10;
+  print('Hello $x');
 }
 # sample code",dart_1
 dart,"class Person {
   String name;
   Person(this.name);
-}
-# sample code",dart_2
-dart,"void main() {
-  print('Hello, Dart');
-}",dart_5
-dart,"class Person {
-  String name;
-  Person(this.name);
-}",dart_12
+}",dart_2
 dart,"class Person {
   String name;
   Person(this.name);
 }
-# sample code
-
-# sample code",dart_14
-dart,"void main() {
-  print('Hello, Dart');
-}
-# sample code
-# sample code",dart_17
-dart,"class Person {
-  String name;
-  Person(this.name);
-}
-# sample code
-# sample code",dart_50
-dart,"class Person {
-  String name;
-  Person(this.name);
-}
-
-# sample code",dart_55
-dart,"void main() {
-  print('Hello, Dart');
-}
-# sample code
-
-# sample code",dart_74
+# sample code",dart_3
 groovy,"def list = [1, 2, 3]
 list.each { println it }
 # sample code",groovy_0
 groovy,"def list = [1, 2, 3]
-list.each { println it }
-# sample code
+list.each { println it }",groovy_1
+groovy,"def greet(name) {
+  println ""Hello $name""
+}
+greet('World')
 # sample code",groovy_2
-groovy,"def hello() {
-  println 'Hello from Groovy'
+groovy,"def greet(name) {
+  println ""Hello $name""
 }
-# sample code
-
-# sample code",groovy_3
-groovy,"def list = [1, 2, 3]
-list.each { println it }",groovy_4
-groovy,"def list = [1, 2, 3]
-list.each { println it }
-
-# sample code",groovy_6
-groovy,"def hello() {
-  println 'Hello from Groovy'
-}",groovy_7
-groovy,"def hello() {
-  println 'Hello from Groovy'
-}
-# sample code",groovy_14
-groovy,"def hello() {
-  println 'Hello from Groovy'
-}
-# sample code
-# sample code",groovy_18
-groovy,"def list = [1, 2, 3]
-list.each { println it }
-# sample code
-
-# sample code",groovy_39
-groovy,"def hello() {
-  println 'Hello from Groovy'
-}
-
-# sample code",groovy_70
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);
+greet('World')",groovy_3
+jsx,"const Button = ({ onClick, label }) => (
+  <button onClick={onClick}>{label}</button>
+);
 # sample code",jsx_0
 jsx,"import React from 'react';
 const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code",jsx_1
-jsx,const element = <button onClick={() => alert('click')}>Click</button>;,jsx_2
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;",jsx_3
+export default App;",jsx_2
 jsx,"import React from 'react';
 const App = () => <div>Hello JSX</div>;
 export default App;
-# sample code
-var message = 'ok';",jsx_4
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-# sample code",jsx_5
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-# sample code",jsx_6
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code",jsx_7
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-const idx = 42;
-# sample code",jsx_9
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-let count = items.length;",jsx_12
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-let count = items.length;",jsx_13
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",jsx_16
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-const idx = 42;",jsx_23
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-const idx = 42;",jsx_25
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-console.log('done');
-# sample code",jsx_31
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-console.log('done');
-# sample code",jsx_40
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-var message = 'ok';
-# sample code",jsx_49
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-var message = 'ok';
-# sample code",jsx_50
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-console.log('done');",jsx_58
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);",jsx_60
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-console.log('done');",jsx_67
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-console.log('done');",jsx_82
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-let count = items.length;",jsx_84
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-const result = values.reduce((acc, x) => acc + x, 0);",jsx_85
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);",jsx_87
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-var message = 'ok';
-# sample code",jsx_89
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",jsx_91
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-var message = 'ok';",jsx_98
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-let count = items.length;
-# sample code",jsx_104
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-console.log('done');
-# sample code",jsx_105
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-const idx = 42;
-# sample code",jsx_111
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-var message = 'ok';
-# sample code",jsx_124
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-console.log('done');
-# sample code",jsx_128
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-const idx = 42;
-# sample code",jsx_133
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-let count = items.length;",jsx_144
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-var message = 'ok';",jsx_152
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-const idx = 42;",jsx_164
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-console.log('done');",jsx_172
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-const idx = 42;
-# sample code",jsx_178
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-let count = items.length;
-# sample code",jsx_206
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-const idx = 42;",jsx_260
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-# sample code
-var message = 'ok';",jsx_266
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-# sample code
-let count = items.length;
-# sample code",jsx_294
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-let count = items.length;
-# sample code",jsx_371
-jsx,"const element = <button onClick={() => alert('click')}>Click</button>;
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",jsx_671
-jsx,"import React from 'react';
-const App = () => <div>Hello JSX</div>;
-export default App;
-const result = values.reduce((acc, x) => acc + x, 0);",jsx_832
+# sample code",jsx_3
+jsx,"const Button = ({ onClick, label }) => (
+  <button onClick={onClick}>{label}</button>
+);",jsx_6
+tsx,"import React from 'react';
+interface Props { name: string; }
+const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
+export default App;",tsx_0
 tsx,"import React from 'react';
 interface Props { name: string; }
 const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
 export default App;
-# sample code
-# sample code",tsx_0
+# sample code",tsx_1
 tsx,"const value: number = 42;
 const message: string = `Value is ${value}`;
-# sample code
-let count = items.length;",tsx_1
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-console.log('done');
 # sample code",tsx_2
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;",tsx_3
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);",tsx_4
 tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code",tsx_6
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-var message = 'ok';",tsx_7
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-var message = 'ok';",tsx_11
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);",tsx_12
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;",tsx_16
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-const idx = 42;
-# sample code",tsx_17
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-# sample code",tsx_18
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code",tsx_20
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-var message = 'ok';",tsx_24
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-const idx = 42;",tsx_27
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-console.log('done');",tsx_29
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-console.log('done');",tsx_40
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-let count = items.length;",tsx_45
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-const idx = 42;",tsx_51
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-const result = values.reduce((acc, x) => acc + x, 0);",tsx_57
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-var message = 'ok';",tsx_58
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-var message = 'ok';
-# sample code",tsx_59
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-console.log('done');",tsx_78
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-console.log('done');
-# sample code",tsx_89
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-let count = items.length;
-# sample code",tsx_95
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-var message = 'ok';
-# sample code",tsx_97
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-const result = values.reduce((acc, x) => acc + x, 0);",tsx_101
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",tsx_102
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-console.log('done');
-# sample code",tsx_114
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-console.log('done');
-# sample code",tsx_122
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-const idx = 42;",tsx_124
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-const idx = 42;
-# sample code",tsx_126
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-const idx = 42;",tsx_129
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-let count = items.length;",tsx_142
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",tsx_143
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-var message = 'ok';
-# sample code",tsx_146
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-console.log('done');",tsx_155
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-const idx = 42;
-# sample code",tsx_212
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-let count = items.length;
-# sample code",tsx_223
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-let count = items.length;",tsx_249
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-let count = items.length;
-# sample code",tsx_262
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",tsx_304
-tsx,"import React from 'react';
-interface Props { name: string; }
-const App: React.FC<Props> = ({ name }) => <div>{name}</div>;
-export default App;
-# sample code
-const result = values.reduce((acc, x) => acc + x, 0);
-# sample code",tsx_324
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-let count = items.length;
-# sample code",tsx_325
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-var message = 'ok';
-# sample code",tsx_353
-tsx,"const value: number = 42;
-const message: string = `Value is ${value}`;
-# sample code
-const idx = 42;
-# sample code",tsx_398
-json,"{""name"": ""John"", ""age"": 30, ""city"": ""New York""}
-# sample code",json_0
-json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}
-# sample code
-
-# sample code",json_1
+const message: string = `Value is ${value}`;",tsx_5
+json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}",json_0
+json,"{
+  ""name"": ""John"",
+  ""age"": 30,
+  ""items"": [1, 2, 3]
+}",json_1
 json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}
 # sample code",json_2
-json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}
-# sample code
-# sample code",json_3
-json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}
-
-# sample code",json_11
-json,"{""users"": [{""id"": 1, ""name"": ""Alice""}, {""id"": 2, ""name"": ""Bob""}]}",json_13
-json,"{""name"": ""John"", ""age"": 30, ""city"": ""New York""}",json_17
-json,"{""name"": ""John"", ""age"": 30, ""city"": ""New York""}
-# sample code
-
-# sample code",json_29
-json,"{""name"": ""John"", ""age"": 30, ""city"": ""New York""}
-# sample code
-# sample code",json_52
-json,"{""name"": ""John"", ""age"": 30, ""city"": ""New York""}
-
-# sample code",json_82
-yaml,"items:
-  - id: 1
-    name: Item 1
-  - id: 2
-    name: Item 2",yaml_0
-yaml,"items:
-  - id: 1
-    name: Item 1
-  - id: 2
-    name: Item 2
-# sample code",yaml_1
-yaml,"items:
-  - id: 1
-    name: Item 1
-  - id: 2
-    name: Item 2
-# sample code
-
-# sample code",yaml_2
-yaml,"name: John
-age: 30
-city: New York
-# sample code",yaml_5
-yaml,"items:
-  - id: 1
-    name: Item 1
-  - id: 2
-    name: Item 2
-
-# sample code",yaml_8
-yaml,"name: John
-age: 30
-city: New York",yaml_9
-yaml,"items:
-  - id: 1
-    name: Item 1
-  - id: 2
-    name: Item 2
-# sample code
-# sample code",yaml_10
-yaml,"name: John
-age: 30
-city: New York
-# sample code
-# sample code",yaml_12
-yaml,"name: John
-age: 30
-city: New York
-# sample code
-
-# sample code",yaml_32
-yaml,"name: John
-age: 30
-city: New York
-
-# sample code",yaml_79
-csv,"name,age,city
-John,30,New York
-Alice,25,London
-# sample code
+json,"{
+  ""name"": ""John"",
+  ""age"": 30,
+  ""items"": [1, 2, 3]
+}
+# sample code",json_4
+yaml,"name: demo
+version: 1
+items:
+  - one
+  - two
+nested:
+  key: value
+# sample code",yaml_0
+yaml,"name: demo
+version: 1
+items:
+  - one
+  - two
+nested:
+  key: value",yaml_1
+yaml,"services:
+  web:
+    image: nginx
+    ports:
+      - ""80:80""
+# sample code",yaml_3
+yaml,"services:
+  web:
+    image: nginx
+    ports:
+      - ""80:80""",yaml_4
+csv,"id,name,age,city
+1,Alice,30,NYC
+2,Bob,25,LA
+3,Carol,35,SF
 # sample code",csv_0
-csv,"id,value
-1,10
-2,20
-3,30",csv_1
-csv,"id,value
-1,10
-2,20
-3,30
-# sample code",csv_2
-csv,"name,age,city
-John,30,New York
-Alice,25,London",csv_4
-csv,"id,value
-1,10
-2,20
-3,30
-# sample code
-# sample code",csv_6
-csv,"name,age,city
-John,30,New York
-Alice,25,London
-# sample code",csv_7
-csv,"id,value
-1,10
-2,20
-3,30
-
-# sample code",csv_8
-csv,"name,age,city
-John,30,New York
-Alice,25,London
-# sample code
-
-# sample code",csv_11
-csv,"name,age,city
-John,30,New York
-Alice,25,London
-
-# sample code",csv_40
-csv,"id,value
-1,10
-2,20
-3,30
-# sample code
-
-# sample code",csv_66
+csv,"id,name,age,city
+1,Alice,30,NYC
+2,Bob,25,LA
+3,Carol,35,SF",csv_1
+csv,"date,open,high,low,close
+2024-01-01,100,110,95,105",csv_3
+csv,"date,open,high,low,close
+2024-01-01,100,110,95,105
+# sample code",csv_5
 toml,"[package]
-name = ""example""
-version = ""0.1.0""",toml_0
-toml,"[database]
-server = ""192.168.1.1
-ports = [ 8001, 8001, 8002 ]
-# sample code",toml_1
-toml,"[package]
-name = ""example""
-version = ""0.1.0""
-# sample code",toml_2
-toml,"[package]
-name = ""example""
-version = ""0.1.0""
-# sample code
-# sample code",toml_3
-toml,"[database]
-server = ""192.168.1.1
-ports = [ 8001, 8001, 8002 ]",toml_14
-toml,"[database]
-server = ""192.168.1.1
-ports = [ 8001, 8001, 8002 ]
-# sample code
-# sample code",toml_15
-toml,"[package]
-name = ""example""
-version = ""0.1.0""
-# sample code
+name = ""demo""
+version = ""1.0""
 
-# sample code",toml_19
-toml,"[database]
-server = ""192.168.1.1
-ports = [ 8001, 8001, 8002 ]
-# sample code
-
-# sample code",toml_29
-toml,"[database]
-server = ""192.168.1.1
-ports = [ 8001, 8001, 8002 ]
-
-# sample code",toml_31
+[dependencies]
+foo = ""^2.0""",toml_0
+toml,"[server]
+host = ""localhost""
+port = 8080
+debug = true",toml_1
 toml,"[package]
-name = ""example""
-version = ""0.1.0""
+name = ""demo""
+version = ""1.0""
 
-# sample code",toml_86
-ini,"[user]
-username = admin
-password = secret
+[dependencies]
+foo = ""^2.0""
+# sample code",toml_4
+toml,"[server]
+host = ""localhost""
+port = 8080
+debug = true
+# sample code",toml_6
+ini,"[database]
+host=localhost
+port=5432
+name=mydb
 # sample code",ini_0
-ini,"[settings]
-name = example
-enabled = true",ini_1
-ini,"[settings]
-name = example
-enabled = true
-# sample code
-# sample code",ini_2
-ini,"[settings]
-name = example
-enabled = true
-# sample code
-
-# sample code",ini_3
-ini,"[user]
-username = admin
-password = secret",ini_4
-ini,"[settings]
-name = example
-enabled = true
-# sample code",ini_5
-ini,"[settings]
-name = example
-enabled = true
-
-# sample code",ini_37
-ini,"[user]
-username = admin
-password = secret
-# sample code
-# sample code",ini_42
-ini,"[user]
-username = admin
-password = secret
-
-# sample code",ini_68
-ini,"[user]
-username = admin
-password = secret
-# sample code
-
-# sample code",ini_80
-svg,"<svg xmlns=""http://www.w3.org/2000/svg""><rect width=""100"" height=""100"" fill=""blue"" /></svg>
+ini,"[section]
+key = value
+; comment
+other = 123
+[next]
+flag = true
+# sample code",ini_1
+ini,"[section]
+key = value
+; comment
+other = 123
+[next]
+flag = true",ini_2
+ini,"[database]
+host=localhost
+port=5432
+name=mydb",ini_4
+svg,"<svg xmlns=""http://www.w3.org/2000/svg"" width=""100"">
+  <circle cx=""50"" cy=""50"" r=""40"" fill=""red""/>
+</svg>
 # sample code",svg_0
-svg,"<svg width=""100"" height=""100""><circle cx=""50"" cy=""50"" r=""40"" fill=""red"" /></svg>
-# sample code",svg_1
-svg,"<svg width=""100"" height=""100""><circle cx=""50"" cy=""50"" r=""40"" fill=""red"" /></svg>",svg_2
-svg,"<svg xmlns=""http://www.w3.org/2000/svg""><rect width=""100"" height=""100"" fill=""blue"" /></svg>",svg_4
-svg,"<svg width=""100"" height=""100""><circle cx=""50"" cy=""50"" r=""40"" fill=""red"" /></svg>
-# sample code
-# sample code",svg_6
-svg,"<svg xmlns=""http://www.w3.org/2000/svg""><rect width=""100"" height=""100"" fill=""blue"" /></svg>
-# sample code
-# sample code",svg_14
-svg,"<svg width=""100"" height=""100""><circle cx=""50"" cy=""50"" r=""40"" fill=""red"" /></svg>
-# sample code
-
-# sample code",svg_23
-svg,"<svg width=""100"" height=""100""><circle cx=""50"" cy=""50"" r=""40"" fill=""red"" /></svg>
-
-# sample code",svg_29
-svg,"<svg xmlns=""http://www.w3.org/2000/svg""><rect width=""100"" height=""100"" fill=""blue"" /></svg>
-
-# sample code",svg_38
-svg,"<svg xmlns=""http://www.w3.org/2000/svg""><rect width=""100"" height=""100"" fill=""blue"" /></svg>
-# sample code
-
-# sample code",svg_131
+svg,"<svg width=""200"" height=""200"">
+  <rect x=""10"" y=""10"" width=""80"" height=""80"" fill=""blue""/>
+</svg>",svg_1
+svg,"<svg width=""200"" height=""200"">
+  <rect x=""10"" y=""10"" width=""80"" height=""80"" fill=""blue""/>
+</svg>
+# sample code",svg_3
+svg,"<svg xmlns=""http://www.w3.org/2000/svg"" width=""100"">
+  <circle cx=""50"" cy=""50"" r=""40"" fill=""red""/>
+</svg>",svg_5
