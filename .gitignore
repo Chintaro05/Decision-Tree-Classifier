@@ -5,4 +5,28 @@ project.zip
 .gitignore
 
 repo_template/
-_pycache_/
+__pycache__/
+readme.md
+fixed_dtc/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+
+# Large model files (regenerable)
+project/models/lgb_model.pkl
+
+# Large intermediate data (regenerable)
+project/data/raw_dataset.csv
+project/data/test_set.csv
+project/data/val_known.csv
+project/data/val_unknown.csv
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
